@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 0.15'
+#gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -45,3 +45,15 @@ group :development do
   gem 'spring'
 end
 
+#Setting up bootstrap-sass
+gem 'bootstrap-sass'
+
+#Setting up pg db
+ruby '2.3.1'
+group :production do
+  	gem 'pg', '~> 0.15' #(only if using postgres db)
+ 		gem 'rails_12factor'
+end
+group :development, :test do #(if local db is sqlite3)
+  			gem 'sqlite3'
+		end
