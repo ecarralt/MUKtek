@@ -1,2 +1,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+.construction{
+
+  img{
+    height: 600px;
+    align-items: center;
+    margin-left: 400px;
+  }
+  h1{
+    padding-bottom: 400px;
+    color: white;
+    margin-left: 350px;
+  }
+  background-color: #0012D0;
+}
