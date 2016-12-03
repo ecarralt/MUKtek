@@ -1,9 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// Setting official MUKTEK color
 $muktekblue: #273983;
 
+//Initial construction CSS code (site in construction, basically)
 .construction{
-
   img{
     height: 600px;
     align-items: center;
