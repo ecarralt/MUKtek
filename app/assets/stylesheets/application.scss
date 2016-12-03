@@ -1,6 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+$muktekblue: #273983;
 
 .construction{
 
@@ -14,5 +14,5 @@
     color: white;
     margin-left: 350px;
   }
-  background-color: #0012D0;
+  background-color: $muktekblue;
 }
