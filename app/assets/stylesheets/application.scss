@@ -6,15 +6,45 @@ $muktekblue: #273983;
 
 //Initial construction CSS code (site in construction, basically)
 .construction{
-  img{
-    height: 600px;
-    align-items: center;
-    margin-left: 400px;
+  background-color: $muktekblue;
+  .MUKTEK_logo{
+    img {
+      height: 600px;
+      align-items: center;
+      display: block;
+      margin: auto;
+    }
   }
   h1{
-    padding-bottom: 400px;
+    padding-bottom: 150px;
     color: white;
-    margin-left: 350px;
+    text-align: center;
   }
-  background-color: $muktekblue;
-}
+  .invite{
+    color: white;
+    padding-bottom: 100px;
+    text-align: center;
+
+  }
+
+  .fb_marketing{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+
+    .fblogo{
+      img{
+        height: 75px;
+      }
+    }
+    .fb_page_address{
+      h3{
+        color: white;
+        padding-bottom: 300px;
+        text-align: center;
+      }
+    }
+  }
+
+  }
