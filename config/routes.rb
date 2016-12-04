@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   root "pstudents#home", as: :home
 
+  post 'pstudents/create' => 'pstudents#create', as: :create_pstudent
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
