@@ -1,8 +1,75 @@
 
 <!-- Site in construction code -->
 <div class="construction">
- <%= image_tag("MUKTEK.png")%>
+      <div class="row alert">
+        <div class="col-sm-9 col-sm-offset-2">
+          <% if notice %>
+            <div class="alert alert-info alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <p> <%= notice %>  </p>
+            </div>
+          <% end %>
+        </div>
+      </div>
 
- <h1>Talento y tecnología. desde el origen.</h1>
+    <div class="row MUKTEK_logo">
+      <%= image_tag("MUKTEK.png")%>
+    </div>
+    <div class="row">
+      <h1>Talento y tecnología. desde el origen.</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <h1 class="invite">
+          Si quieres lograr cosas inimaginables, síguenos en Facebook e inscríbete a nuestro newsletter aquí...
+        </h1>
+      </div>
 
+    </div>
+
+   <div class="row fb_marketing">
+     <div class="fblogo">
+       <a href="http://www.facebook.com/fuerzamuktek">
+       <%= image_tag("fb_logo_2.png")%>
+       </a>
+     </div>
+     <div class="fb_page_address">
+       <h3>
+        <a href="http://www.facebook.com/fuerzamuktek">fuerzamuktek</a>
+       </h3>
+     </div>
+   </div>
+
+  <div class="row">
+    <div class="col-sm-9 col-sm-offset-3">
+      <h3>Newsletter sign-up:</h3>
+    </div>
+  </div>
+
+   <div class="row">
+     <div class="newsletter_form">
+       <div class="col-sm-6 col-sm-offset-3">
+         <div class="sign_up_form form-group">
+           <%= form_for @pstudent, url: create_pstudent_path do |f| %>
+             <div class="formfield first_name">
+               <%= f.text_field :first_name, class: 'form-control', placeholder: "Nombre"  %>
+             </div>
+             <div class="formfield last_name">
+               <%= f.text_field :last_name, class: 'form-control', placeholder: "Apellido"  %>
+             </div>
+             <div class="formfield last_name">
+               <%= f.text_field :email, class: 'form-control', placeholder: "email"  %>
+             </div>
+             <div class="submit_button">
+               <%= f.submit "Inscribirme!", class: "btn btn-primary"%>
+               <!-- or -->
+               <!-- <%= link_to 'Cancel', :back %> -->
+             </div>
+
+           <% end %>
+         </div>
+       </div>
+     </div>
+
+   </div>
 </div>
