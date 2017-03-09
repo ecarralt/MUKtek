@@ -23,4 +23,108 @@
       <h3 class="subtitle">Llena tu solicitud y estaremos en contacto contigo muy pronto!</h3>
     </div>
   </div>
+  <div class="col-sm-9 col-sm-offset-2">
+    <h2>Datos Personales</h2>
+    <h6>Política de privacidad: Grupo MUKTEK S.A.P.I. de C.V. no compartirá los datos
+      compartidos por candidatos, de ninguna forma. MUKTEK solo usará tus datos para efectos
+      que tengan que ver con la impartición de nuestras clases.
+    </h6>
+  </div>
+
+<!-- Form to create application -->
+
+  <div class="row">
+    <div class="col-sm-9 col-sm-offset-2">
+      <div class="app_form">
+        <%= form_for @application, url: create_application_path do |f| %>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label "Nombre" %>:
+              <%= f.text_field :first_name, class: 'form-control', placeholder: "Ej. Eugenio"  %>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label "Apellido Materno" %>:
+              <%= f.text_field :last_name_materno, class: 'form-control', placeholder: "Ej. Perez"  %>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label 'Apellido Paterno' %>:
+              <%= f.text_field :last_name_paterno, class: 'form-control', placeholder: "Ej. Arredondo"  %>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="">
+              <%= f.label 'Email' %>:
+              <%= f.text_field :email, class: 'form-control', placeholder: "Ej: ejemplo@muktek.com"  %>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="">
+              <%= f.label 'Teléfono' %>:
+              <%= f.text_field :phone, class: 'form-control', placeholder: "Ej: 55 5596-9699"  %>
+            </div>
+          </div>
+
+        </div>
+        <div class="fecha_nacimiento">
+          <h4>Fecha de nacimiento:</h4>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label 'Día' %>:
+              <%= f.text_field :DOB_day, class: 'form-control', placeholder: "Ej: 5"  %>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label 'Mes' %>:
+              <%= f.text_field :DOB_month, class: 'form-control', placeholder: "Ej: Marzo"  %>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label 'Año' %>:
+              <%= f.text_field :DOB_year, class: 'form-control', placeholder: "Ej: 1988"  %>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h2>Solicitud</h2>
+        </div>
+        <div class="row">
+          <%= f.label '¿Cómo te enteraste de los Cursos MUKTEK?' %>:
+          <%= f.text_area   :a1_como_te_enteraste, rows: 10, class: 'form-control', placeholder: "Ej: Un amigo"  %>
+        </div>
+        <div class="row">
+          <%= f.label 'Contesta los siguientes problemas simples:' %>:
+          <h6>Laura es más grande que Enrique.
+              Claudio es más grande que Laura.
+              Enrique es más grande que Claudio.
+              Si los dos primeros enunciados son ciertos, entonces el tercer enunciado es:
+              A) Cierto     B) Falso    C) No se puede concluír una respuesta con la información disponible.
+          </h6>
+          <%= f.text_field   :a1_como_te_enteraste, class: 'form-control', placeholder: "Ej: Un amigo"  %>
+        </div>
+        <div class="row">
+          <h6>Todos los arboles en el parque tienen flores.
+              Algunos de estos arboles son Cornejos (un tipo de árbol).
+              Todos los Cornejos en el parque tienen flores.
+              Si los dos primeros enunciados son ciertos, entonces el tercer enunciado es:
+              A) Cierto    B) Falso     C) Incierto
+          </h6>
+          <%= f.text_field   :a1_como_te_enteraste, class: 'form-control', placeholder: "Ej: Un amigo"  %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+
+
 </div>
