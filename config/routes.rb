@@ -4,9 +4,9 @@ Rails.application.routes.draw do
 
   post 'pstudents/create' => 'pstudents#create', as: :create_pstudent
 
-  
+  #Application Form and creation
   get 'applications/new' => 'applications#new', as: :new_application
-
+  post 'applicaitons/create' => 'applications#create', as: :create_application
 
 
 

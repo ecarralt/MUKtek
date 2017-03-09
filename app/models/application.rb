@@ -1,4 +1,4 @@
-class Applications < ActiveRecord::Base
+class Application < ActiveRecord::Base
 
    validates :first_name, presence: true
    validates :last_name_materno, presence: true

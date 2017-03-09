@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "applications";
 
 // Setting official MUKTEK color
 $muktekblue: #273983;
@@ -69,7 +70,7 @@ $muktekblue: #273983;
   }
 
   .comingsoon{
-    margin-left: 40px; 
+    margin-left: 40px;
     font-size: 60px;
   }
 

@@ -1,0 +1,44 @@
+// Setting official MUKTEK color
+$muktekblue: #273983;
+
+.alert{
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+
+}
+.container{
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+
+}
+.top_banner{
+  background-color: $muktekblue;
+  .cursos_muktek{
+    font-size: 30px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+}
+.MUKTEK_logo{
+  margin-left: 0px;
+  margin-right: 0px;
+  img {
+    height: 100px;
+    align-items: center;
+    display: block;
+    margin-left: 0px;
+  }
+  .title{
+    margin-top: 10px;
+  }
+  .subtitle{
+    margin-top: 0px;
+  }
+ }
