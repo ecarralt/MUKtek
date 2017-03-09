@@ -4,6 +4,11 @@ Rails.application.routes.draw do
 
   post 'pstudents/create' => 'pstudents#create', as: :create_pstudent
 
+  
+  get 'applications/new' => 'applications#new', as: :new_application
+
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
