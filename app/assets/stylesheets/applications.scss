@@ -1,5 +1,6 @@
 // Setting official MUKTEK color
 $muktekblue: #273983;
+$muktekorange: #FFC000;
 
 .alert{
   margin-left: 0px;
@@ -16,6 +17,14 @@ $muktekblue: #273983;
 }
 .top_banner{
   background-color: $muktekblue;
+  .tag{
+    img {
+      height: 60px;
+      align-items: center;
+      display: block;
+      margin-left: 10px;
+    }
+  }
   .cursos_muktek{
     font-size: 30px;
     color: white;
@@ -25,27 +34,65 @@ $muktekblue: #273983;
     padding-bottom: 30px;
     text-align: center;
   }
+  .logo{
+    margin-left: -10px;
+
+    img {
+      height: 100px;
+      align-items: center;
+      display: block;
+      margin-left: 0px;
+    }
+  }
 }
 .MUKTEK_logo{
   margin-left: 0px;
   margin-right: 0px;
-  img {
-    height: 100px;
-    align-items: center;
-    display: block;
-    margin-left: 0px;
+  .titleset{
+    padding-left: 0px;
   }
   .title{
     margin-top: 10px;
-  }
+    color: $muktekblue;
+ }
   .subtitle{
     margin-top: 0px;
+    color: $muktekblue;
+
   }
  }
 
+
  .fecha_nacimiento{
    h4{
-     font-style: bold;
+     font-weight: bold;
    }
 
+ }
+
+ .question{
+   font-weight: bold;
+  //  font-size: 20px;
+ }
+
+ .f_create_application_buttons{
+   margin-top: 20px;
+   font-color: #002C8B;
+
+   .btn-primary {
+    background: $muktekorange;
+    color: $muktekblue;
+    }
+    a {
+      color: $muktekblue;
+    }
+ }
+
+ .politica{
+   margin-top: 20px;
+ }
+ .space {
+   margin-top: 0px;
+   height: 80px;
+   background-color: $muktekblue;
  }
