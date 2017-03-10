@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   #Application Form and creation
   get 'applications/new' => 'applications#new', as: :new_application
-  post 'applicaitons/create' => 'applications#create', as: :create_application
+  post 'applications/create' => 'applications#create', as: :create_application
 
 
 

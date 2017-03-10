@@ -135,7 +135,7 @@
                 Si los dos primeros enunciados son ciertos, entonces el tercer enunciado es:<br/><br />
                 A) Cierto <br />    B) Falso  <br />  C) No se puede concluír una respuesta con la información disponible.<br />
             </h5>
-            <%= f.text_field   :a1_como_te_enteraste, class: 'form-control', placeholder: "A, B, o C?"  %>
+            <%= f.text_field   :a3_logictest1_Laura, class: 'form-control', placeholder: "A, B, o C?"  %>
           </div>
         </div>
         <div class="row">
@@ -147,13 +147,13 @@
                 Si los dos primeros enunciados son ciertos, entonces el tercer enunciado es:<br /><br />
                 A) Cierto <br />   B) Falso<br />     C) Incierto<br />
             </h5>
-            <%= f.text_field   :a1_como_te_enteraste, class: 'form-control', placeholder: "A, B, o C?"  %>
+            <%= f.text_field   :a4_logictest2_arboles, class: 'form-control', placeholder: "A, B, o C?"  %>
           </div>
         </div>
         <div class="f_create_application_buttons">
           <%= f.submit "Enviar solicitud", class: "btn btn-primary"%>
           o
-          <%= link_to 'Cancelar', :back %>
+          <%= link_to 'Cancelar', home_path %>
         </div>
       <% end %>
       </div>
