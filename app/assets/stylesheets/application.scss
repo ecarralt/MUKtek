@@ -35,6 +35,14 @@ $muktekblue: #273983;
 
   }
 
+  .banner{
+    img{
+      display: block;
+      margin: auto;
+      width: 100%;
+    }
+  }
+
   .fb_marketing{
     display: flex;
     align-items: flex-start;
@@ -47,6 +55,25 @@ $muktekblue: #273983;
       }
     }
     .fb_page_address{
+      h3, a{
+        color: white;
+        padding-bottom: 100px;
+      }
+    }
+  }
+
+  .curso_marketing{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+
+    .clicklogo{
+      img{
+        height: 75px;
+      }
+    }
+    .curso_address{
       h3, a{
         color: white;
         padding-bottom: 100px;
