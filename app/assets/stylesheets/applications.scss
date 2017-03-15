@@ -2,6 +2,11 @@
 $muktekblue: #273983;
 $muktekorange: #FFC000;
 
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .alert{
   margin-left: 0px;
   margin-right: 0px;
@@ -23,11 +28,13 @@ $muktekorange: #FFC000;
 .top_banner{
   background-color: $muktekblue;
   .tag{
+
     img {
       height: 60px;
       align-items: center;
       display: block;
       margin-left: 10px;
+      padding: 0px;
     }
   }
   .cursos_muktek{
@@ -40,19 +47,22 @@ $muktekorange: #FFC000;
     text-align: center;
   }
   .logo{
-    margin-left: -10px;
+    margin-left: 0px;
+    padding: 0px;
 
     img {
       height: 100px;
       align-items: center;
       display: block;
       margin-left: 0px;
+      padding: 0px;
     }
   }
 }
 .MUKTEK_logo{
   margin-left: 0px;
   margin-right: 0px;
+  padding-left: 20px;
   .titleset{
     padding-left: 0px;
   }
@@ -73,6 +83,10 @@ $muktekorange: #FFC000;
      font-weight: bold;
    }
 
+ }
+
+ .solicitud{
+   padding-left: 0px;
  }
 
  .question{
@@ -100,4 +114,23 @@ $muktekorange: #FFC000;
    margin-top: 0px;
    height: 80px;
    background-color: $muktekblue;
+  //  margin-right: 0px;
+  //  margin-left: 0px;
+  .logo3{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    img{
+      width: 40px;
+      margin-top: 5px;
+    }
+    h6{
+      color: white;
+    }
+  }
  }

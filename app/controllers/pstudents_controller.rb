@@ -16,4 +16,8 @@ class PstudentsController < ApplicationController
     end
   end
 
+  def newhome
+
+  end
+
 end

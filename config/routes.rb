@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   post 'applications/create' => 'applications#create', as: :create_application
 
 
+  #Showing new website
+  get 'pstudents/newhome' => 'pstudents#newhome', as: :newhome
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
