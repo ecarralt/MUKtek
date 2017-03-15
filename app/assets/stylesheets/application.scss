@@ -15,9 +15,31 @@ $muktekblue: #273983;
     padding: 0px;
     margin: 0px;
   }
+  .jumbotron{
+    padding-top: 0px;
+    .logo1{
+      img{
+        width: 100px;
+        margin-bottom: -20px;
+        margin-left: 40px;
+      }
+    }
+    h1{
+      margin-top: 0px;
+      color: $muktekblue;
+      margin-bottom: -150px;
+
+    }
+    h2{
+      text-align: center;
+      color: $muktekblue;
+      margin-bottom: 50px;
+    }
+
+  }
   .MUKTEK_logo{
     img {
-      height: 600px;
+      height: 300px;
       align-items: center;
       display: block;
       margin: auto;
@@ -99,6 +121,31 @@ $muktekblue: #273983;
   .comingsoon{
     margin-left: 40px;
     font-size: 60px;
+  }
+
+  .footer_home{
+    // height: 80px;
+    background-color: #EEEEEE;
+    // text-align: center;
+
+    .logo1 {
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-start;
+      align-items: flex-start;
+      img{
+        width: 80px;
+        padding-top: 15px;
+
+      }
+    }
+    h4{
+      font-size: 33px;
+      margin-top: 48px;
+      color: $muktekblue
+    }
   }
 
 }
