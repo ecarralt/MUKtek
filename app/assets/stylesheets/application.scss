@@ -52,6 +52,22 @@ $cloud: #EEEEEE;
     color: white;
     text-align: center;
   }
+
+  .divider{
+    height: 2px;
+  background-color: $cloud;
+  }
+  .cursos_title{
+    h1{
+      margin-top: 60px;
+      font-size: 50px;
+      color: $cloud;
+      padding-bottom: 60px;
+      text-align: center;
+
+    }
+
+  }
   .invite{
     color: white;
     padding-bottom: 100px;
