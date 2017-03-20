@@ -5,6 +5,7 @@
 
 // Setting official MUKTEK color
 $muktekblue: #273983;
+$cloud: #EEEEEE;
 
 //Initial construction CSS code (site in construction, basically)
 .construction{
@@ -102,6 +103,39 @@ $muktekblue: #273983;
         padding-bottom: 100px;
       }
     }
+  }
+
+  .equipodocente{
+    padding-bottom: 30px;
+    background-color: $cloud;
+
+    h1{
+      text-align: center;
+      color: $muktekblue;
+      padding-bottom: 20px;
+    }
+    h2{
+      text-align: center;
+
+      color: $muktekblue;
+    }
+
+  }
+
+  .team{
+    background-color: $cloud;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    .member{
+
+      height: 500px;
+    }
+
   }
 
   h3{
