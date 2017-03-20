@@ -133,7 +133,10 @@ $cloud: #EEEEEE;
 
     .member{
 
-      height: 500px;
+      img{
+        height: 98%;
+
+      }
     }
 
   }
@@ -143,11 +146,30 @@ $cloud: #EEEEEE;
     margin-bottom: 30px;
   }
 
-  .newsletter_invite{
-    h3{
+
+  .newsletter_title{
+    h1{
+      color: $cloud;
+      padding-bottom: 20px;
       text-align: center;
     }
   }
+  .newsletter_invite{
+    h3{
+      color: $cloud;
+      text-align: center;
+    }
+  }
+
+  .newsletter_form{
+
+    h3{
+      color: $cloud;
+
+    }
+
+  }
+
   .formfield{
     margin-bottom: 10px;
   }
