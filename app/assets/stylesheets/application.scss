@@ -42,11 +42,19 @@ $cloud: #EEEEEE;
   .MUKTEK_logo{
     img {
       height: 300px;
+      // width: 100%;
       align-items: center;
       display: block;
       margin: auto;
     }
   }
+
+  // @media screen and (max-width: 1175px) {
+  //   .teacher_tools_box{
+  //     display: none;
+  //   }
+
+
   h1{
     padding-bottom: 150px;
     color: white;
