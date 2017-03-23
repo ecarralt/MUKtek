@@ -115,21 +115,33 @@
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <h5 class="question">1.- ¿Cómo te enteraste de nuestros cursos? </h5>
+            <h5 class="question">1.- ¿Cumples con estos requisitos para entrar al curso?:</h5>
+            <!-- <h5 class="question">3.1</h5> -->
+            <h5> - Manejo de un navegador web (i.e. Chrome, Internet Explorer, etc.)<br/>
+                - Manejo de un teclado<br/>
+                - Manejo de un procesador de palabras (i.e. MS Word, Apple Pages, etc.)<br/>
+                - Leer y escribir inglés (nivel intermedio)<br/>
+            </h5>
+            <%= f.text_field :requisitos, class: 'form-control', placeholder: "'Si', 'No', o 'Mas o menos'?"%>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h5 class="question">2.- ¿Cómo te enteraste de nuestros cursos? </h5>
             <%= f.text_area   :a1_como_te_enteraste, rows: 3, class: 'form-control', placeholder: "Ejemplo: Me enteré por medio de su página en Facebook"  %>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-12">
-          <h5 class="question">2.-	¿En menos de 250 palabras, cuéntanos por qué quieres aprender HTML y CSS? </h5>
+          <h5 class="question">3.-	¿En menos de 250 palabras, cuéntanos por qué quieres aprender HTML y CSS? </h5>
           <%= f.text_area   :a2_poque_HTMLyCSS, rows: 10, class: 'form-control', placeholder: "Puedes ser breve, pero asegúrate de demostrarnos tu motivación por aprender! Queremos ver tus ganas."  %>
           </div>
         </div>
 
         <div class="row">
           <div class="col-sm-12">
-            <h5 class="question">3.- Contesta los siguientes problemas simples: </h5>
-            <h5 class="question">3.1</h5>
+            <h5 class="question">4.- Contesta los siguientes problemas simples: </h5>
+            <h5 class="question">4.1</h5>
             <h5>Laura es más grande que Enrique.<br/>
                 Claudio es más grande que Laura.<br/>
                 Enrique es más grande que Claudio.<br/>
@@ -141,7 +153,7 @@
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <h5 class="question">3.2</h5>
+            <h5 class="question">4.2</h5>
             <h5>Todos los arboles en el parque tienen flores.<br />
                 Algunos de estos arboles son Cornejos (un tipo de árbol).<br />
                 Todos los Cornejos en el parque tienen flores.<br />

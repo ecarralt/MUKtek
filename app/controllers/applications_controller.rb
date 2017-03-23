@@ -6,6 +6,7 @@ class ApplicationsController < ApplicationController
 
   def create
     @application = Application.new
+    @application.requisitos = params[:application][:requisitos]
     @application.first_name = params[:application][:first_name]
     @application.last_name_materno = params[:application][:last_name_materno]
     @application.last_name_paterno = params[:application][:last_name_paterno]

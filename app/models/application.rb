@@ -12,5 +12,6 @@ class Application < ActiveRecord::Base
    validates :a2_poque_HTMLyCSS, presence: true
    validates :a3_logictest1_Laura, presence: true
    validates :a4_logictest2_arboles, presence: true
+   validates :requisitos, presence: true
 
 end
