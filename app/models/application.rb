@@ -13,5 +13,6 @@ class Application < ActiveRecord::Base
    validates :a3_logictest1_Laura, presence: true
    validates :a4_logictest2_arboles, presence: true
    validates :requisitos, presence: true
+   validates :universidad, presence: true
 
 end

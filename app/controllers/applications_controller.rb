@@ -6,16 +6,18 @@ class ApplicationsController < ApplicationController
 
   def create
     @application = Application.new
-    @application.requisitos = params[:application][:requisitos]
     @application.first_name = params[:application][:first_name]
     @application.last_name_materno = params[:application][:last_name_materno]
     @application.last_name_paterno = params[:application][:last_name_paterno]
     @application.email = params[:application][:email]
     @application.phone = params[:application][:phone]
+    @application.universidad = params[:application][:universidad]
+
     @application.DOB_day = params[:application][:DOB_day].to_i
     @application.DOB_month = params[:application][:DOB_month]
     @application.DOB_year = params[:application][:DOB_year].to_i
 
+    @application.requisitos = params[:application][:requisitos]
     @application.a1_como_te_enteraste = params[:application][:a1_como_te_enteraste]
     @application.a2_poque_HTMLyCSS = params[:application][:a2_poque_HTMLyCSS]
     @application.a3_logictest1_Laura = params[:application][:a3_logictest1_Laura]

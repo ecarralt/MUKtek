@@ -29,9 +29,9 @@
 
   <div class="row MUKTEK_logo">
     <div class="col-sm-10 col-sm-offset-2 titleset">
-      <h1 class="title">CURSO: Introducción a HTML y CSS</h1>
+      <h1 class="title">CURSO: Introducción a HTML y CSS (Junio 2017)</h1>
       <h4 class="subtitle">Llena tu solicitud y estaremos en contacto contigo
-        para confirmar tu lugar en el curso que inicia el 1 de abril.</h4>
+        para confirmar tu lugar en el curso que inicia el 3 de junio.</h4>
     </div>
   </div>
 
@@ -81,8 +81,22 @@
               <%= f.text_field :phone, class: 'form-control', placeholder: "Ej: 55 5596-9699"  %>
             </div>
           </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="">
+              <%= f.label 'Universidad' %>:
+              <%= f.text_field :universidad, class: 'form-control', placeholder: "Ej: UNITEC"  %>
+            </div>
+            <div class="">
+              <h6>Nota: No importa si te graduaste o no. Si nunca has ido a la Universidad, puedes dejar este espacio en blanco, y felicidades por tus ganas de querer llegar lejos!</h6>
+            </div>
+
+          </div>
 
         </div>
+
         <div class="row">
           <div class="fecha_nacimiento">
             <div class="col-sm-12">
@@ -108,6 +122,9 @@
             </div>
           </div>
         </div>
+
+
+
         <div class="row">
           <div class="col-sm-12 solicitud">
             <h2>Solicitud</h2>
