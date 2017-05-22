@@ -13,6 +13,16 @@ Rails.application.routes.draw do
   get 'pstudents/newhome' => 'pstudents#newhome', as: :newhome
 
 
+  #NEW WEBSITE ROUTES
+  get '/nosotros' => 'pstudents#nosotros', as: :nosotros
+  get '/cursos' => 'pstudents#cursos', as: :cursos
+  get '/newsletter' => 'pstudents#newsletter_form', as: :newsletter_form
+  get '/terms' => 'pstudents#terms', as: :terms
+  get '/privacy' => 'pstudents#privacy', as: :privacy
+
+
+  ##integrating this as part of the old applications object
+  get '/applications' => 'applications#show', as: :applications
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

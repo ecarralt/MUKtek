@@ -20,4 +20,25 @@ class PstudentsController < ApplicationController
 
   end
 
+## NEW WEBSITE CODE
+
+  def nosotros
+
+  end
+
+  def cursos
+
+  end
+
+  def newsletter_form
+
+  end
+
+  def terms
+
+  end
+  def privacy
+
+  end
+
 end

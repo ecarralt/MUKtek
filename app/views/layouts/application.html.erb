@@ -12,6 +12,14 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MUKTEK</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+  <link href="site.css" rel="stylesheet">
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,6 +36,27 @@
 
 
 <%= yield %>
+
+
+<section class="Footer">
+  <div class="Footer-logo">
+    <%= image_tag("muktek-logo.svg", :alt => "Muktek Logo") %>
+    <!-- <img src="/imgs/muktek-logo.svg" alt="Muktek Logo"/> -->
+    <div class="Footer-logo-slogan">
+      <h3>Talento y tecnologia<br/> desde el origen</h3><a class="link" href="/newsletter.html">SUBSCRIBETE A NUESTRO NEWSLETTER</a>
+    </div>
+  </div>
+  <div class="Footer-social"><a href="https://www.facebook.com/fuerzamuktek" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://twitter.com/fuerzamuktek" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.instagram.com/fuerzamuktek" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a><a href="https://www.youtube.com/channel/UCbcj9G6EaXtYLqTDpVee09Q" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
+  <div class="Footer-info">
+    <ul>
+      <li><a href="/terms">TERMINOS Y CONDICIONES</a></li>
+      <li><a href="/privacy">AVISO DE PRIVACIDAD</a></li>
+    </ul>
+  </div>
+</section>
+
+
+<script src="https://use.fontawesome.com/8442e6330f.js"></script>
 
 
 </body>

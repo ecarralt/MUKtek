@@ -1,211 +1,244 @@
-<!-- <div class="container"> -->
+<div class="row alert">
+         <div class="col-sm-9 col-sm-offset-2">
+           <% if notice %>
+             <div class="alert alert-info alert-dismissible" role="alert">
+               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <p> <%= notice %>  </p>
+             </div>
+           <% end %>
+         </div>
+</div>
 
-
-  <div class="row top_banner">
-    <div class="col-sm-1 tag">
-      <%= image_tag("tag.png")%>
+<section class="BotMenu"><a href="/nosotros.html">
+    <h2>NOSOTROS</h2></a><a href="/cursos.html">
+    <h2>CURSOS</h2></a><a href="/inscripciones.html">
+    <h2>INSCRIPCIONES</h2></a></section>
+<section class="Hero Hero--small">
+  <a href="/">
+  <%= image_tag("muktek-logo.svg", :class => "Hero-logo", :alt => "Home logo") %>
+  </a>
+</section>
+  <!-- <img class="Hero-logo" src="/imgs/muktek-logo.svg" alt="Home logo"/> -->
+<section class="section--quote">
+  <h2 class="quote">Estás a solo unos pasos de formar parte de nuestra comunidad</h2>
+</section>
+<section class="section--inscription">
+  <h2 class="form__subtitle">Inscríbete Ahora </br></br>
+    <small>Curso Introducción a HTML y CSS, Junio 2017</small></h2>
+  <form id="new_application" action="/applications/create" accept-charset="UTF-8" method="post">
+    <input name="utf8" type="hidden" value="✓">
+    <input type="hidden" name="authenticity_token" value="JEmM76p/Ml4BjqLAMsFZDWL8wXtn9swcw+suibwegTR8aJEC0AiyjC4KrM4APyHca5jJB8b54EHIkFQgcUpSUQ==">
+    <div>
+      <label for="application_Nombre">Nombre</label>
+      <input required class="form-control" placeholder="Ej. Eugenio" type="text" name="application[first_name]" id="application_first_name">
     </div>
-    <div class="col-sm-10">
-        <h5 class="cursos_muktek">CURSOS MUKTEK</h5>
+    <div>
+      <label for="application_Apellido Paterno">Apellido paterno</label>
+      <input required class="form-control" placeholder="Ej. Perez" type="text" name="application[last_name_paterno]" id="application_last_name_paterno">
     </div>
-    <div class="col-sm-1 logo">
-      <a href="/">
-        <%=  image_tag("MUKTEK_3_white.png")%>
-      </a>
+    <div>
+      <label for="application_Apellido Materno">Apellido materno</label>
+      <input required class="form-control" placeholder="Ej. Arredondo" type="text" name="application[last_name_materno]" id="application_last_name_materno">
+    </div>
+    <div>
+      <label for="application_Email">Email</label>
+      <input required class="form-control" placeholder="Ej: ejemplo@muktek.com" type="text" name="application[email]" id="application_email">
+    </div>
+    <div>
+      <label for="application_Teléfono">Teléfono</label>
+      <input required class="form-control" placeholder="Ej: 55 5596-9699" type="text" name="application[phone]" id="application_phone">
+    </div>
+    <div>
+      <label for="application_Universidad">Universidad</label>
+      <input required class="form-control" placeholder="Ej: UNITEC" type="text" name="application[universidad]" id="application_universidad">
+    </div>
+    <div><small>Nota: No importa si te graduaste o no. Si nunca has ido a la Universidad, puedes dejar este espacio en blanco, y felicidades por tus ganas de querer llegar lejos!</small></div>
+    <div>
+      <label>Fecha de Nacimiento</label>
+    </div>
+    <div class="flex">
+      <div>
+        <label for="application_Día">Día</label>
+        <input required class="form-control" placeholder="Ej: 5" type="text" name="application[DOB_day]" id="application_DOB_day">
+      </div>
+      <div>
+        <label for="application_Mes">Mes</label>
+        <input required class="form-control" placeholder="Ej: Marzo" type="text" name="application[DOB_month]" id="application_DOB_month">
+      </div>
+      <div>
+        <label for="application_Año">Año</label>
+        <input required class="form-control" placeholder="Ej: 1988" type="text" name="application[DOB_year]" id="application_DOB_year">
+      </div>
+    </div>
+      <h3 class="form__subtitle">Solicitud</h3>
+      <div>
+        <h5 class="question">1.- ¿Cumples con estos requisitos para entrar al curso?:</h5>
+        <ul>
+          <li>Manejo de un navegador web (i.e. Chrome, Internet Explorer, etc.)</li>
+          <li>Manejo de un teclado</li>
+          <li>Manejo de un procesador de palabras (i.e. MS Word, Apple Pages, etc.)</li>
+          <li>Leer y escribir inglés (nivel intermedio)</li>
+        </ul>
+        <input required class="form-control" placeholder="'Si', 'No', o 'Mas o menos'?" type="text" name="application[requisitos]" id="application_requisitos">
+      </div>
+      <div>
+        <h5 class="question">2.- ¿Cómo te enteraste de nuestros cursos?</h5>
+        <textarea required class="form-control" rows="3" placeholder="Ejemplo: Me enteré por medio de su página en Facebook" name="application[a1_como_te_enteraste]" id="application_a1_como_te_enteraste"></textarea>
+      </div>
+      <div>
+        <h5 class="question">3.-  ¿En menos de 250 palabras, cuéntanos por qué quieres aprender HTML y CSS?</h5>
+        <textarea required class="form-control txt-200" rows="10" placeholder="Puedes ser breve, pero asegúrate de demostrarnos tu motivación por aprender! Queremos ver tus ganas." name="application[a2_poque_HTMLyCSS]" id="application_a2_poque_HTMLyCSS"></textarea>
+      </div>
+      <div>
+        <h5 class="question">4.- Contesta los siguientes problemas simples:</h5>
+        <h5 class="question">4.1</h5>
+        <ul>
+          <li>Laura es más grande que Enrique.</li>
+          <li>Claudio es más grande que Laura.</li>
+          <li>Enrique es más grande que Claudio.</li>
+          <li>Si los dos primeros enunciados son ciertos, entonces el tercer enunciado es:</li>
+          <li>A) Cierto</li>
+          <li>B) Falso</li>
+          <li>C) No se puede concluír una respuesta con la información disponible.</li>
+        </ul>
+        <input required class="form-control" placeholder="A, B, o C?" type="text" name="application[a3_logictest1_Laura]" id="application_a3_logictest1_Laura">
+      </div>
+      <div>
+        <h5 class="question">4.2</h5>
+        <ul>
+          <li>Todos los arboles en el parque tienen flores.</li>
+          <li>Algunos de estos arboles son Cornejos (un tipo de árbol).</li>
+          <li>Todos los Cornejos en el parque tienen flores.</li>
+          <li>Si los dos primeros enunciados son ciertos, entonces el tercer enunciado es:</li>
+          <li>A) Cierto</li>
+          <li>B) Falso</li>
+          <li>C) Incierto</li>
+          <input required class="form-control" placeholder="A, B, o C?" type="text" name="application[a4_logictest2_arboles]" id="application_a4_logictest2_arboles">
+        </ul>
+      </div>
+      <div>
+        <input required class="button button--cta btn btn-warning" type="submit" name="commit" value="Enviar solicitud">
+      </div>
+    </div>
+  </form>
+</section>
+<!-- <section class="Footer">
+  <div class="Footer-logo">
+    <%= image_tag("muktek-logo.svg", :alt => "Muktek Logo") %>
+    <div class="Footer-logo-slogan">
+      <h3>Talento y tecnologia<br/> desde el origen</h3><a class="link" href="/newsletter.html">SUBSCRIBETE A NUESTRO NEWSLETTER</a>
     </div>
   </div>
-
-
-  <div class="row alert">
-    <div class="col-sm-9 col-sm-offset-2">
-      <% if notice %>
-        <div class="alert alert-info alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <p> <%= notice %>  </p>
-        </div>
-      <% end %>
-    </div>
+  <div class="Footer-social"><a href="https://www.facebook.com/fuerzamuktek" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://twitter.com/fuerzamuktek" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.instagram.com/fuerzamuktek" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a><a href="https://www.youtube.com/channel/UCbcj9G6EaXtYLqTDpVee09Q" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
+  <div class="Footer-info">
+    <ul>
+      <li><a href="#terms">TERMINOS Y CONDICIONES</a></li>
+      <li><a href="#legal">AVISOS LEGALES</a></li>
+    </ul>
   </div>
-
-  <div class="row MUKTEK_logo">
-    <div class="col-sm-10 col-sm-offset-2 titleset">
-      <h1 class="title">CURSO: Introducción a HTML y CSS (Junio 2017)</h1>
-      <h4 class="subtitle">Llena tu solicitud y estaremos en contacto contigo
-        para confirmar tu lugar en el curso que inicia el 3 de junio.</h4>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-9 col-sm-offset-2">
-      <h2>Datos Personales</h2>
-    </div>
-  </div>
-
-
-<!-- Form to create application -->
-
-  <div class="row">
-    <div class="col-sm-9 col-sm-offset-2">
-      <div class="app_form">
-        <%= form_for @application, url: create_application_path do |f| %>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="">
-              <%= f.label "Nombre" %>:
-              <%= f.text_field :first_name, class: 'form-control', placeholder: "Ej. Eugenio"  %>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="">
-              <%= f.label "Apellido Paterno"%>:
-              <%= f.text_field :last_name_paterno, class: 'form-control', placeholder: "Ej. Perez"  %>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="">
-              <%= f.label "Apellido Materno" %>:
-              <%= f.text_field :last_name_materno, class: 'form-control', placeholder: "Ej. Arredondo"  %>
-            </div>
-          </div>
+</section> -->
+<div class="modal" id="terms">
+  <div class="modal__dialog">
+    <div class="modal__content copy--purple">
+      <header class="container"><a class="modal__close" href="#">X</a>
+        <h2>TÉRMINOS Y CONDICIONES GENERALES PARA LOS SERVICIOS DE CAPACITACIÓN QUE OFRECE MUKTEK, S.A.P.I DE C.V.</h2>
+      </header>
+      <div class="container">
+        <div style="padding: 20px 0;">
+          <h3 class="title__modal">I. Alcance</h3>
+          <p>Estos términos y condiciones aplican a todos los cursos ofrecidos por MUKTEK, S.A.P.I. DE C.V. (MUKTEK).</p>
+          <p>Le recomendamos que lea con detenimiento el contenido de los términos y condiciones generales antes de generar el pago de cualquiera de los servicios de capacitación que ofrecemos.</p>
+          <p>Los términos y condiciones generales no son negociables y una vez aceptados son obligatorios para todos los usuarios de nuestros servicios.</p>
+          <h3 class="title__modal">II. Registro</h3>
+          <p>Las solicitudes de inscripción a los cursos se realizarán exclusivamente a través del formato de registro publicado en nuestra página web (<a class='terms__link' href='http://www.muktek.com/'>http://www.muktek.com/</a>); nosotros enviaremos la confirmación de su registro y aceptación (o falta de la misma) al curso, al correo electrónico proporcionado por usted.</p>
+          <p>La fecha límite de registro a los cursos se establecerá al momento de la publicación de los mismos.</p>
+          <p>El registro implica el reconocimiento y aceptación de nuestros términos y condiciones generales. El desconocimiento del contenido de los términos y condiciones generales no le exime de la responsabilidad.</p>
+          <p>Adicionalmente, el registro implica la aceptación en favor de MUKTEK, para que éste haga uso de fotos y/o videos de los alumnos para la promoción de los cursos de MUKTEK, ya sea en línea o de cualquier otra forma.</p>
+          <h3 class="title__modal">III. Servicios</h3>
+          <p>Nuestro servicio incluye:</p>
+          <ul class="terms__list">
+            <li>Curso de 4 horas de aprendizaje;</li>
+            <li>2 horas de asesoría;</li>
+            <li>Constancia de participación con valor curricular. Esta será otorgada a los participantes que asistan al menos al 75% de la capacitación y el 75% de las asignaturas completadas satisfactoriamente;</li>
+            <li>Instructores capacitados y con amplia experiencia.</li>
+            <li>Materiales, herramientas. El equipo de cómputo con el software necesario para la actividad de formación será incluido en algunos cursos de MUKTEK, y esto se indicará dependiendo el curso.</li>
+          </ul>
+          <h3 class="title__modal">IV. Precios y condiciones de pago</h3>
+          <p>Los costos de los cursos serán enviados por correo electrónico al cliente, una vez que se haya registrado. El pago consiste de una inscripción y un costo remanente. El pago de la inscripción debe realizarse inmediatamente después de la aceptación del alumno al curso correspondiente, para reservar un lugar en el mismo. El pago remanente debe realizarse en una o dos exhibiciones por medio de depósito en efectivo o transferencia electrónica en la cuenta bancaria a nombre de MUKTEK, salvo que en la publicación de los cursos se establezca lo contrario.</p>
+          <p>MUKTEK indicará a los participantes el número de cuenta y las fechas para la realización de los pagos a través de correo electrónico, una vez haya finalizado el proceso de registro. El comprobante de pago junto con la documentación solicitada deberá ser legible y enviada a la dirección de correo electrónico determinada por MUKTEK; MUKTEK enviará la confirmación de su inscripción al correo electrónico proporcionado, una vez haya sido confirmado el pago correspondiente.</p>
+          <h3 class="title__modal">V. Facturación</h3>
+          <p>El participante que requiera de factura deberá solicitarla al momento de enviar la documentación con su comprobante de pago, para lo cual deberá anexar <strong>la cédula y domicilio fiscal completo</strong>. Factura que no sea solicitada en el momento de la inscripción, no podrá ser emitida posteriormente. MUKTEK emitirá y enviará la factura correspondiente una vez <strong>iniciado el curso</strong>, a la dirección de correo electrónico previamente registrada por el participante.</p>
+          <h3 class="title__modal">VI. Derechos reservados de modificación</h3>
+          <p>MUKTEK se reserva el derecho de cambiar los cursos por razones justificables (mencionando de forma enunciativa más no limitativa, cuando haya pocos participantes o en caso de que el instructor se encuentra incapacitado a acudir al curso correspondiente) de posponer o cancelar los servicios y/o de asignar un nuevo instructor.</p>
+          <h3 class="title__modal">VII. Cancelaciones por los participantes registrados</h3>
+          <p>El costo de la capacitación será cobrado a los participantes registrados y su inscripción será confirmada incluso en el caso de inasistencia. Los participantes pueden cancelar su inscripción en el curso comunicando su decisión a la dirección de correo electrónico pagos@muktek.com. Si la cancelación se realiza dentro de los 6 días hábiles anteriores al inicio del curso se devolverá el 100% del valor de la misma. Si la cancelación ocurre en una fecha posterior a lo establecido anteriormente o al inicio del curso, no habrá devoluciones. La fecha y hora de cancelación corresponde al día en que MUKTEK recibe comunicación vía correo electrónico de ello.</p>
+          <h3 class="title__modal">VIII. Ley aplicable</h3>
+          <p>Este acuerdo está sujeto a la legislación y jurisdicción de los tribunales competentes establecidos en la Ciudad de México, México.</p>
+          <h3 class="title__modal">IX. Derechos de autor</h3>
+          <p>El material escrito de los cursos no puede ser reproducido bajo ningún propósito sin el consentimiento oficial de MUKTEK y solamente puede ser utilizado para propósitos explícitamente autorizados por la MUKTEK. El software utilizado o proporcionado por MUKTEK para la realización de las capacitaciones no puede ser removido, copiado (total o parcialmente) ni usado de cualquier otra manera no autorizada. Ninguna grabación de video o sonido es permitida.</p>
+          <h3 class="title__modal">X. Responsabilidad</h3>
+          <p>Toda la información técnica proporcionada en los cursos y la documentación de las capacitaciones, es correcta de acuerdo con nuestro conocimiento. Ninguna responsabilidad será asumida por la exactitud de la información proporcionada en los cursos o en los documentos de la capacitación.</p>
         </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="">
-              <%= f.label 'Email' %>:
-              <%= f.text_field :email, class: 'form-control', placeholder: "Ej: ejemplo@muktek.com"  %>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="">
-              <%= f.label 'Teléfono' %>:
-              <%= f.text_field :phone, class: 'form-control', placeholder: "Ej: 55 5596-9699"  %>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="">
-              <%= f.label 'Universidad' %>:
-              <%= f.text_field :universidad, class: 'form-control', placeholder: "Ej: UNITEC"  %>
-            </div>
-            <div class="">
-              <h6>Nota: No importa si te graduaste o no. Si nunca has ido a la Universidad, puedes dejar este espacio en blanco, y felicidades por tus ganas de querer llegar lejos!</h6>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="row">
-          <div class="fecha_nacimiento">
-            <div class="col-sm-12">
-              <h4>Fecha de nacimiento:</h4>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="">
-              <%= f.label 'Día' %>:
-              <%= f.text_field :DOB_day, class: 'form-control', placeholder: "Ej: 5"  %>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="">
-              <%= f.label 'Mes' %>:
-              <%= f.text_field :DOB_month, class: 'form-control', placeholder: "Ej: Marzo"  %>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="">
-              <%= f.label 'Año' %>:
-              <%= f.text_field :DOB_year, class: 'form-control', placeholder: "Ej: 1988"  %>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="row">
-          <div class="col-sm-12 solicitud">
-            <h2>Solicitud</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <h5 class="question">1.- ¿Cumples con estos requisitos para entrar al curso?:</h5>
-            <!-- <h5 class="question">3.1</h5> -->
-            <h5> - Manejo de un navegador web (i.e. Chrome, Internet Explorer, etc.)<br/>
-                - Manejo de un teclado<br/>
-                - Manejo de un procesador de palabras (i.e. MS Word, Apple Pages, etc.)<br/>
-                - Leer y escribir inglés (nivel intermedio)<br/>
-            </h5>
-            <%= f.text_field :requisitos, class: 'form-control', placeholder: "'Si', 'No', o 'Mas o menos'?"%>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <h5 class="question">2.- ¿Cómo te enteraste de nuestros cursos? </h5>
-            <%= f.text_area   :a1_como_te_enteraste, rows: 3, class: 'form-control', placeholder: "Ejemplo: Me enteré por medio de su página en Facebook"  %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-          <h5 class="question">3.-	¿En menos de 250 palabras, cuéntanos por qué quieres aprender HTML y CSS? </h5>
-          <%= f.text_area   :a2_poque_HTMLyCSS, rows: 10, class: 'form-control', placeholder: "Puedes ser breve, pero asegúrate de demostrarnos tu motivación por aprender! Queremos ver tus ganas."  %>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12">
-            <h5 class="question">4.- Contesta los siguientes problemas simples: </h5>
-            <h5 class="question">4.1</h5>
-            <h5>Laura es más grande que Enrique.<br/>
-                Claudio es más grande que Laura.<br/>
-                Enrique es más grande que Claudio.<br/>
-                Si los dos primeros enunciados son ciertos, entonces el tercer enunciado es:<br/><br />
-                A) Cierto <br />    B) Falso  <br />  C) No se puede concluír una respuesta con la información disponible.<br />
-            </h5>
-            <%= f.text_field   :a3_logictest1_Laura, class: 'form-control', placeholder: "A, B, o C?"  %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <h5 class="question">4.2</h5>
-            <h5>Todos los arboles en el parque tienen flores.<br />
-                Algunos de estos arboles son Cornejos (un tipo de árbol).<br />
-                Todos los Cornejos en el parque tienen flores.<br />
-                Si los dos primeros enunciados son ciertos, entonces el tercer enunciado es:<br /><br />
-                A) Cierto <br />   B) Falso<br />     C) Incierto<br />
-            </h5>
-            <%= f.text_field   :a4_logictest2_arboles, class: 'form-control', placeholder: "A, B, o C?"  %>
-          </div>
-        </div>
-        <div class="f_create_application_buttons">
-          <%= f.submit "Enviar solicitud", class: "btn btn-warning"%>
-          o
-          <%= link_to 'Cancelar', home_path %>
-        </div>
-      <% end %>
       </div>
     </div>
   </div>
-
-  <div class="row politica">
-    <div class="col-sm-9 col-sm-offset-2">
-      <h6>Política de privacidad: Grupo MUKTEK S.A.P.I. de C.V. no compartirá los datos
-        compartidos por candidatos, de ninguna forma. MUKTEK solo usará tus datos para efectos
-        que tengan que ver con la impartición de nuestras clases.
-      </h6>
+</div>
+<div class="modal" id="legal">
+  <div class="modal__dialog">
+    <div class="modal__content copy--blue">
+      <header class="container"><a class="modal__close" href="#">X</a>
+        <h2>AVISO DE PRIVACIDAD DE MUKTEK</h2>
+      </header>
+      <div class="container">
+        <div style="padding: 20px 0;">
+          <p>MUKTEK, S.A.P.I. de C.V. (“<span class='terms__link'>MUKTEK</span>”) con domicilio en Avenida Goldsmith #40, Colonia Polanco, Delegación Miguel Hidalgo, C.P. 11550, Ciudad de México, México, reconoce la importancia del tratamiento legítimo, controlado e informado de sus datos personales y corporativos (“<span class='terms__link'>Datos Personales</span>”), a fin de garantizar su derecho a la privacidad y la autodeterminación informativa. El presente aviso de privacidad (“<span class='terms__link'>Aviso de Privacidad</span>”) se pone a su disposición a fin de que conozca las prácticas de MUKTEK al obtener, usar, divulgar o almacenar, sus Datos Personales.</p>
+          <h3 class="title__modal">¿Qué datos personales recabamos?</h3>
+          <p>Algunos de los Datos Personales que pudieran recabarse son:</p>
+          <ul class="terms__list">
+            <li>Nombre;</li>
+            <li>Dirección de correo electrónico;</li>
+            <li>Número de teléfono fijo y/o de teléfono celular;</li>
+            <li>Fecha de nacimiento;</li>
+            <li>Escolaridad;</li>
+            <li>Nombres de escuelas a las que se acudió;</li>
+            <li>Profesión;</li>
+            <li>Información financiera o bancaria (como número de cuenta bancaria); y,</li>
+            <li>Cualquier otra que pueda ser considerada como confidencial y susceptible para ser tratada como privada.</li>
+          </ul>
+          <p>MUKTEK tratará sus Datos Personales únicamente por el tiempo que sea necesario, a fin de cumplir con las finalidades descritas en el presente Aviso de Privacidad y/o de conformidad con lo que establezcan las disposiciones legales aplicables.</p>
+          <h3 class="title__modal">¿Para qué recabamos los Datos Personales?</h3>
+          <p>Los Datos Personales que recaba MUKTEK son utilizados para prestarle los servicios ofrecidos, para desarrollar y mejorar nuestros servicios, para contactarlo, para comunicarle novedades respecto a nuestros servicios, para dar seguimiento a los cursos impartidos por nosotros, para llevar a cabo actividades de mercadeo y promocionales, para prestarle los servicios específicos de cada una de las áreas de servicio en las cuales se ha registrado, para proporcionarle acceso a información sobre servicios que consideramos pudieran ser de su interés, para interrelacionar bases de datos y conocer su perfil y necesidades, para llevar a cabo la facturación por los servicios prestados, para enviarle facturas electrónicas al correo electrónico proporcionado, para gestionar la cobranza y el procesamiento de pagos, para implementar medidas de protección en contra de posibles transacciones fraudulentas o identificación de las mismas y, en general, para cumplir con el desarrollo propio de la relación comercial.</p>
+          <p>Sus Datos Personales podrán ser utilizados para otras finalidades siempre y cuando dichas finalidades sean compatibles con las antes descritas y puedan considerarse análogas.</p>
+          <p>Las redes sociales constituyen una plataforma de comunicación y de interconexión entre plataformas digitales de los distintos usuarios. Dichas plataformas son ajenas a MUKTEK y la información que usted proporcione dentro de redes sociales en las que MUKTEK participa como usuario, no constituye ni forma parte de los Datos Personales sujetos a la protección de este Aviso de Privacidad, siendo responsabilidad de la empresa prestadora de esa plataforma y de quien lo publica.</p>
+          <h3 class="title__modal">¿Qué comunicaciones de sus Datos Personales podrán llevarse a cabo?</h3>
+          <p>MUKTEK puede compartir con terceros, nacionales o extranjeros, sus Datos Personales con el fin de cumplir con las finalidades antes descritas. Los terceros a los que MUKTEK puede comunicar sus Datos Personales son, por ejemplo: otras compañías afiliadas o subsidiarias de MUKTEK; asesores profesionales externos que actúen a nombre y por cuenta de MUKTEK; prestadores de servicios que son contratados para cumplir con las finalidades descritas y que actúan a nombre y por cuenta de MUKTEK.</p>
+          <p>Cuando MUKTEK comparta sus Datos Personales con terceros se asegurará de que dichos terceros tomen las medidas necesarias para proteger la confidencialidad y seguridad de sus Datos Personales. MUKTEK requerirá que dichos terceros cumplan con el Aviso de Privacidad y la Política de Privacidad de MUKTEK y les prohibirá utilizar sus Datos Personales para un fin distinto a aquellos para los cuales fueron recabados.</p>
+          <p>Asimismo, MUKTEK puede comunicar sus Datos Personales a terceros, nacionales o extranjeros, independientes de MUKTEK, cuando tenga el propósito de cumplir con una obligación legalmente adquirida, sea requerido por resolución o determinación de autoridad competente, exista una situación de emergencia que ponga en riesgo su persona o sus bienes o cuando dicha comunicación de datos esté prevista en una ley.</p>
+          <h3 class="title__modal">¿Cómo resguardamos sus Datos Personales?</h3>
+          <p>MUKTEK ha adoptado las medidas de seguridad, administrativas, técnicas y físicas, necesarias para proteger sus Datos Personales contra daño, pérdida, alteración, destrucción o el uso, acceso o tratamiento no autorizado.</p>
+          <p>El acceso a sus Datos Personales, en poder de MUKTEK, se limitará a las personas que necesiten tener acceso a dicha información, con el propósito de llevar a cabo las finalidades identificadas en este Aviso de Privacidad.</p>
+          <p>MUKTEK se compromete a que la información proporcionada por usted será tratada de conformidad con la legislación en materia de protección de Datos Personales aplicable.</p>
+          <h3 class="title__modal">¿Qué derechos y obligaciones te corresponden como titular de los Datos Personales?</h3>
+          <p>Usted, como titular de Datos Personales podrá ejercer ante los representantes legales de MUKTEK, los derechos de acceso, rectificación, cancelación y/u oposición, de acuerdo a lo siguiente:</p>
+          <ul class="terms__list">
+            <li><strong>Derecho de Acceso</strong>. Que se le informe cuáles de sus Datos Personales están contenidos en las bases de datos de MUKTEK, para qué se utilizan, el origen de dichos datos y las comunicaciones que se hayan realizado con los mismos.</li>
+            <li><strong>Derecho de Rectificación</strong>. Que se corrijan o actualicen sus Datos Personales en caso de que sean inexactos o incompletos. Usted tendrá la obligación de informar a MUKTEK de los cambios que se deban hacer a sus Datos Personales, cuando dichos cambios sólo sean de su conocimiento y sean imputables a usted.</li>
+            <li><strong>Derecho de Cancelación</strong>. Que sus Datos Personales sean dados de baja de las bases de datos de MUKTEK. Esta solicitud dará lugar a un periodo de bloqueo tras el cual procederá la supresión de los datos.</li>
+          </ul>
+          <p>Existen casos en los que la cancelación no será posible en términos de lo establecido en la legislación aplicable.</p>
+          <ul class="terms__list">
+            <li><strong>Derecho de Oposición</strong>. Oponerse por causa legítima al tratamiento de sus Datos Personales por parte de MUKTEK. En los casos que la oposición verse sobre la recepción de ciertos comunicados, en dichos comunicados se incluirá la opción para salir de la lista de distribución y dejar de recibirlos.</li>
+          </ul>
+          <p>MUKTEK pone a su disposición el siguiente correo electrónico, para que nos pueda enviar su solicitud de acceso, rectificación, cancelación y oposición: unsuscribe@muktek.com, a cargo de la señorita Atenas Cruz Gama.</p>
+          <p>Sus solicitudes deberán contener los requisitos mínimos contenidos en la legislación aplicable. MUKTEK le comunicará en un periodo máximo de 15 (quince) días naturales, contados a partir de la fecha de recepción de su solicitud, la determinación adoptada.</p>
+          <h3 class="title__modal">¿Cómo te comunicamos los cambios al Aviso de Privacidad?</h3>
+          <p>En caso de existir cambios, modificaciones y/o actualizaciones al presente Aviso de Privacidad, de las cuales MUKTEK se reserva el derecho a efectuar en cualquier momento, las mismas se pondrán a su disposición en la página de internet www.muktek.com. La falta de oposición al Aviso de Privacidad modificado, dentro de los 5 (cinco) días hábiles siguientes a su publicación, se entenderá como la aceptación y consentimiento a los términos establecidos en el mismo.</p>
+          <h3 class="title__modal">¿A quién debes dirigir tus dudas o comentarios y ante quién se ejercitan los derechos de acceso, rectificación, cancelación y oposición?</h3>
+          <p>En caso de tener dudas o comentarios respecto del Aviso de Privacidad o si quisiera ejercitar cualquiera de los derechos que por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares le corresponden, le pedimos contacte al Departamento de Protección de Datos Personales de MUKTEK, a través de la siguiente dirección de correo electrónico unsuscribe@muktek.com, a cargo de la señorita Atenas Cruz Gama. El Departamento de Protección de Datos Personales de MUKTEK atenderá cualquier duda que pudiera tener respecto al tratamiento de su información.</p>
+          <p>Si el usuario utiliza los servicios de MUKTEK, significa que dicho usuario ha leído, entendido y acordado los términos y condiciones expuestos en el presente Aviso de Privacidad, publicado en el sitio web de MUKTEK. Si no está de acuerdo con ellos, el usuario no deberá proporcionar ninguna información personal, ni utilizar nuestros servicios.</p>
+          <p>Fecha de última actualización: <time>21 de mayo de 2017</time>.</p>
+        </div>
+      </div>
     </div>
   </div>
-
-
-  <div class="row space">
-      <div class="col-sm-12 logo3">
-        <%= image_tag("MUKTEK_3_white.png")%>
-        <h6>Talento y tecnología. desde el orígen.</h6>
-      </div>
-  </div>
-
-
-<!-- </div> -->
+</div>

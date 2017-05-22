@@ -1,250 +1,257 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "applications";
-@import "newhome";
+// @import "bootstrap-sprockets";
+// @import "bootstrap";
+@import "site.css";
 
-// Setting official MUKTEK color
-$muktekblue: #273983;
-$cloud: #EEEEEE;
-
-//Initial construction CSS code (site in construction, basically)
-.construction{
-  background-color: $muktekblue;
-  padding-left: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  .row{
-    padding: 0px;
-    margin: 0px;
-  }
-  .jumbotron{
-    padding-top: 0px;
-    .logo1{
-      img{
-        width: 100px;
-        margin-bottom: -20px;
-        margin-left: 40px;
-      }
-    }
-    h1{
-      margin-top: 0px;
-      color: $muktekblue;
-      margin-bottom: -150px;
-
-    }
-    h2{
-      text-align: center;
-      color: $muktekblue;
-      margin-bottom: 50px;
-    }
-
-  }
-  .MUKTEK_logo{
-    img {
-      height: 300px;
-      // width: 100%;
-      align-items: center;
-      display: block;
-      margin: auto;
-    }
-  }
-
-  // @media screen and (max-width: 1175px) {
-  //   .teacher_tools_box{
-  //     display: none;
-  //   }
-
-
-  h1{
-    padding-bottom: 150px;
-    color: white;
-    text-align: center;
-  }
-
-  .divider{
-    height: 2px;
-  background-color: $cloud;
-  }
-  .cursos_title{
-    h1{
-      margin-top: 60px;
-      font-size: 50px;
-      color: $cloud;
-      padding-bottom: 60px;
-      text-align: center;
-
-    }
-
-  }
-  .invite{
-    color: white;
-    padding-bottom: 100px;
-    text-align: center;
-
-  }
-
-  .banner{
-    img{
-      display: block;
-      margin: auto;
-      width: 100%;
-    }
-  }
-
-  .fb_marketing{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: center;
-
-    .fblogo{
-      img{
-        height: 75px;
-      }
-    }
-    .fb_page_address{
-      h3, a{
-        color: white;
-        padding-bottom: 100px;
-      }
-    }
-  }
-
-  .curso_marketing{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: center;
-
-    .clicklogo{
-      img{
-        height: 75px;
-      }
-    }
-    .curso_address{
-      h3, a{
-        color: white;
-        padding-bottom: 100px;
-      }
-    }
-  }
-
-  .equipodocente{
-    padding-bottom: 30px;
-    background-color: $cloud;
-
-    h1{
-      text-align: center;
-      color: $muktekblue;
-      padding-bottom: 20px;
-      font-size: 50px;
-      margin-top: 40px;
-    }
-    h2{
-      text-align: center;
-
-      color: $muktekblue;
-    }
-
-  }
-  .equipoadmin{
-    padding-bottom: 30px;
-    background-color: $cloud;
-    h2{
-      margin-top: 60px;
-      text-align: center;
-      color: $muktekblue;
-    }
-
-  }
-
-  .team{
-    background-color: $cloud;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-
-    .member{
-
-      img{
-        height: 500px;
-      }
-    }
-
-  }
-
-  h3{
-    color: white;
-    margin-bottom: 30px;
-  }
-
-
-  .newsletter_title{
-    h1{
-      margin-top: 40px;
-      font-size: 50px;
-      color: $cloud;
-      padding-bottom: 20px;
-      text-align: center;
-    }
-  }
-  .newsletter_invite{
-    h3{
-      color: $cloud;
-      text-align: center;
-    }
-  }
-
-  .newsletter_form{
-
-    h3{
-      color: $cloud;
-
-    }
-
-  }
-
-  .formfield{
-    margin-bottom: 10px;
-  }
-
-  .submit_button{
-    margin-top: 25px;
-    margin-bottom: 100px;
-
-  }
-
-  .comingsoon{
-    margin-left: 40px;
-    font-size: 60px;
-  }
-
-  .footer_home{
-    // height: 80px;
-    background-color: #EEEEEE;
-    // text-align: center;
-
-    .logo1 {
-      display:flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: flex-start;
-      align-items: flex-start;
-      img{
-        width: 80px;
-        padding-top: 15px;
-
-      }
-    }
-    h4{
-      font-size: 33px;
-      margin-top: 48px;
-      color: $muktekblue
-    }
-  }
+.btn-primary{
+  color: black;
 
 }
+
+// @import "applications";
+// @import "newhome";
+//
+// // Setting official MUKTEK color
+// $muktekblue: #273983;
+// $cloud: #EEEEEE;
+//
+// //Initial construction CSS code (site in construction, basically)
+// .construction{
+//   background-color: $muktekblue;
+//   padding-left: 0px;
+//   margin-left: 0px;
+//   margin-right: 0px;
+//   .row{
+//     padding: 0px;
+//     margin: 0px;
+//   }
+//   .jumbotron{
+//     padding-top: 0px;
+//     .logo1{
+//       img{
+//         width: 100px;
+//         margin-bottom: -20px;
+//         margin-left: 40px;
+//       }
+//     }
+//     h1{
+//       margin-top: 0px;
+//       color: $muktekblue;
+//       margin-bottom: -150px;
+//
+//     }
+//     h2{
+//       text-align: center;
+//       color: $muktekblue;
+//       margin-bottom: 50px;
+//     }
+//
+//   }
+//   .MUKTEK_logo{
+//     img {
+//       height: 300px;
+//       // width: 100%;
+//       align-items: center;
+//       display: block;
+//       margin: auto;
+//     }
+//   }
+//
+//   // @media screen and (max-width: 1175px) {
+//   //   .teacher_tools_box{
+//   //     display: none;
+//   //   }
+//
+//
+//   h1{
+//     padding-bottom: 150px;
+//     color: white;
+//     text-align: center;
+//   }
+//
+//   .divider{
+//     height: 2px;
+//   background-color: $cloud;
+//   }
+//   .cursos_title{
+//     h1{
+//       margin-top: 60px;
+//       font-size: 50px;
+//       color: $cloud;
+//       padding-bottom: 60px;
+//       text-align: center;
+//
+//     }
+//
+//   }
+//   .invite{
+//     color: white;
+//     padding-bottom: 100px;
+//     text-align: center;
+//
+//   }
+//
+//   .banner{
+//     img{
+//       display: block;
+//       margin: auto;
+//       width: 100%;
+//     }
+//   }
+//
+//   .fb_marketing{
+//     display: flex;
+//     align-items: flex-start;
+//     flex-direction: row;
+//     justify-content: center;
+//
+//     .fblogo{
+//       img{
+//         height: 75px;
+//       }
+//     }
+//     .fb_page_address{
+//       h3, a{
+//         color: white;
+//         padding-bottom: 100px;
+//       }
+//     }
+//   }
+//
+//   .curso_marketing{
+//     display: flex;
+//     align-items: flex-start;
+//     flex-direction: row;
+//     justify-content: center;
+//
+//     .clicklogo{
+//       img{
+//         height: 75px;
+//       }
+//     }
+//     .curso_address{
+//       h3, a{
+//         color: white;
+//         padding-bottom: 100px;
+//       }
+//     }
+//   }
+//
+//   .equipodocente{
+//     padding-bottom: 30px;
+//     background-color: $cloud;
+//
+//     h1{
+//       text-align: center;
+//       color: $muktekblue;
+//       padding-bottom: 20px;
+//       font-size: 50px;
+//       margin-top: 40px;
+//     }
+//     h2{
+//       text-align: center;
+//
+//       color: $muktekblue;
+//     }
+//
+//   }
+//   .equipoadmin{
+//     padding-bottom: 30px;
+//     background-color: $cloud;
+//     h2{
+//       margin-top: 60px;
+//       text-align: center;
+//       color: $muktekblue;
+//     }
+//
+//   }
+//
+//   .team{
+//     background-color: $cloud;
+//     display:flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+//     align-content: center;
+//     align-items: center;
+//
+//     .member{
+//
+//       img{
+//         height: 500px;
+//       }
+//     }
+//
+//   }
+//
+//   h3{
+//     color: white;
+//     margin-bottom: 30px;
+//   }
+//
+//
+//   .newsletter_title{
+//     h1{
+//       margin-top: 40px;
+//       font-size: 50px;
+//       color: $cloud;
+//       padding-bottom: 20px;
+//       text-align: center;
+//     }
+//   }
+//   .newsletter_invite{
+//     h3{
+//       color: $cloud;
+//       text-align: center;
+//     }
+//   }
+//
+//   .newsletter_form{
+//
+//     h3{
+//       color: $cloud;
+//
+//     }
+//
+//   }
+//
+//   .formfield{
+//     margin-bottom: 10px;
+//   }
+//
+//   .submit_button{
+//     margin-top: 25px;
+//     margin-bottom: 100px;
+//
+//   }
+//
+//   .comingsoon{
+//     margin-left: 40px;
+//     font-size: 60px;
+//   }
+//
+//   .footer_home{
+//     // height: 80px;
+//     background-color: #EEEEEE;
+//     // text-align: center;
+//
+//     .logo1 {
+//       display:flex;
+//       flex-direction: row;
+//       flex-wrap: wrap;
+//       justify-content: center;
+//       align-content: flex-start;
+//       align-items: flex-start;
+//       img{
+//         width: 80px;
+//         padding-top: 15px;
+//
+//       }
+//     }
+//     h4{
+//       font-size: 33px;
+//       margin-top: 48px;
+//       color: $muktekblue
+//     }
+//   }
+//
+// }
