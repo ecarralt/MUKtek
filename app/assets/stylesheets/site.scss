@@ -422,7 +422,8 @@ template {
   .Hero--small {
     background: none;
     background-color: #2c3d89;
-    height: 300px; }
+    height: 300px;
+  }
   .Hero-nav {
     color: white;
     margin: 3rem 3rem 0 0;
@@ -794,7 +795,13 @@ a {
   top: 30px;
   left: 30px;
   width: 50px;
-  height: auto; }
+  height: auto;
+  //enabling emergency message on top of website (need this to disappear in mobile-first)
+  display: none;}
+  @media screen and (min-width: 768px) {
+    .Hero-logo {
+      display: block; }
+  }
 
 .button {
   border: none;
