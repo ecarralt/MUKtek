@@ -25,7 +25,140 @@
 <section class="section--inscription">
   <h2 class="form__subtitle">Inscríbete Ahora </br></br>
     <small>Curso Introducción a HTML y CSS, Junio 2017</small></h2>
-  <form id="new_application" action="/applications/create" accept-charset="UTF-8" method="post">
+
+    <%= form_for @application, url: create_application_path do |f| %>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label "Nombre" %>:
+              <%= f.text_field :first_name, class: 'form-control', placeholder: "Ej. Eugenio"  %>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label "Apellido Paterno" %>:
+              <%= f.text_field :last_name_paterno, class: 'form-control', placeholder: "Ej. Perez"  %>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label 'Apellido Materno' %>:
+              <%= f.text_field :last_name_materno, class: 'form-control', placeholder: "Ej. Arredondo"  %>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="">
+              <%= f.label 'Email' %>:
+              <%= f.text_field :email, class: 'form-control', placeholder: "Ej: ejemplo@muktek.com"  %>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="">
+              <%= f.label 'Teléfono' %>:
+              <%= f.text_field :phone, class: 'form-control', placeholder: "Ej: 55 5596-9699"  %>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label 'Universidad' %>:
+              <%= f.text_field :universidad, class: 'form-control', placeholder: "Ej. UNAM"  %>
+            </div>
+          </div>
+          <div><small>Nota: No importa si te graduaste o no. Si nunca has ido a la Universidad, puedes dejar este espacio en blanco, y felicidades por tus ganas de querer llegar lejos!</small></div>
+
+
+        </div>
+        <div class="fecha_nacimiento">
+          <h4>Fecha de nacimiento:</h4>
+        </div>
+        <div class="row flex">
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label 'Día' %>:
+              <%= f.text_field :DOB_day, class: 'form-control', placeholder: "Ej: 5"  %>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label 'Mes' %>:
+              <%= f.text_field :DOB_month, class: 'form-control', placeholder: "Ej: Marzo"  %>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="">
+              <%= f.label 'Año' %>:
+              <%= f.text_field :DOB_year, class: 'form-control', placeholder: "Ej: 1988"  %>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="form__subtitle">Solicitud</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h5 class="question">1.- ¿Cumples con estos requisitos para entrar al curso?:</h5>
+            <!-- <h5 class="question">3.1</h5> -->
+            <h5> - Manejo de un navegador web (i.e. Chrome, Internet Explorer, etc.)<br/>
+                - Manejo de un teclado<br/>
+                - Manejo de un procesador de palabras (i.e. MS Word, Apple Pages, etc.)<br/>
+                - Leer y escribir inglés (nivel intermedio)<br/><br/>
+            </h5>
+            <%= f.text_field :requisitos, class: 'form-control', placeholder: "'Si', 'No', o 'Mas o menos'?"%>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h5 class="question">2.- ¿Cómo te enteraste de nuestros cursos? </h5>
+            <%= f.text_area   :a1_como_te_enteraste, rows: 3, class: 'form-control', placeholder: "Ejemplo: Me enteré por medio de su página en Facebook"  %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+          <h5 class="question">3.-	¿En menos de 250 palabras, cuéntanos por qué quieres aprender HTML y CSS? </h5>
+          <%= f.text_area   :a2_poque_HTMLyCSS, rows: 10, class: 'form-control txt-200', placeholder: "Puedes ser breve, pero asegúrate de demostrarnos tu motivación por aprender! Queremos ver tus ganas."  %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h5 class="question">4.- Contesta los siguientes problemas simples: </h5>
+            <h5 class="question">4.1</h5>
+                <ul>
+                  <li>Laura es más grande que Enrique.</li>
+                  <li>Claudio es más grande que Laura.</li>
+                  <li>Enrique es más grande que Claudio.</li>
+                  <li>Si los dos primeros enunciados son ciertos, entonces el tercer enunciado es:</li>
+                  <li>A) Cierto</li>
+                  <li>B) Falso</li>
+                  <li>C) No se puede concluír una respuesta con la información disponible.</li>
+                </ul>
+            <%= f.text_field   :a3_logictest1_Laura, class: 'form-control', placeholder: "A, B, o C?"  %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h5 class="question">4.2</h5>
+            <ul>
+                <li>Todos los arboles en el parque tienen flores.</li>
+                <li>Algunos de estos arboles son Cornejos (un tipo de árbol).</li>
+                <li>Todos los Cornejos en el parque tienen flores.</li>
+                <li>Si los dos primeros enunciados son ciertos, entonces el tercer enunciado es:</li>
+                <li>A) Cierto</li>
+                <li>B) Falso</li>
+                <li>C) Incierto</li>
+            </ul>
+            <%= f.text_field   :a4_logictest2_arboles, class: 'form-control', placeholder: "A, B, o C?"  %>
+          </div>
+        </div>
+        <div class="f_create_application_buttons">
+          <%= f.submit "Enviar solicitud", class: "button button--cta btn btn-warning"%>
+          <!-- o
+          <%= link_to 'Cancelar', home_path %> -->
+        </div>
+      <% end %>
+  <!-- <form id="new_application" action="/applications/create" accept-charset="UTF-8" method="post">
     <input name="utf8" type="hidden" value="✓">
     <input type="hidden" name="authenticity_token" value="JEmM76p/Ml4BjqLAMsFZDWL8wXtn9swcw+suibwegTR8aJEC0AiyjC4KrM4APyHca5jJB8b54EHIkFQgcUpSUQ==">
     <div>
@@ -120,7 +253,7 @@
         <input required class="button button--cta btn btn-warning" type="submit" name="commit" value="Enviar solicitud">
       </div>
     </div>
-  </form>
+  </form> -->
 </section>
 <!-- <section class="Footer">
   <div class="Footer-logo">
