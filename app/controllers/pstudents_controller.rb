@@ -1,7 +1,7 @@
 class PstudentsController < ApplicationController
 
   def home
-    @pstudent = Pstudent.new
+    # @pstudent = Pstudent.new
   end
 
   def create
@@ -31,6 +31,7 @@ class PstudentsController < ApplicationController
   end
 
   def newsletter_form
+    @pstudent = Pstudent.new
 
   end
 
