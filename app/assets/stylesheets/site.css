@@ -989,3 +989,12 @@ blockquote {
   padding: 30px;
 
 }
+
+.thumb_rotate{
+  width: 100%;
+  /*transform:          rotate(90deg);
+  -ms-transform:      rotate(90deg);
+  -moz-transform:     rotate(90deg);
+  -webkit-transform:  rotate(90deg);
+  -o-transform:       rotate(90deg);*/
+}
