@@ -10,7 +10,7 @@ class PstudentsController < ApplicationController
     @pstudent.last_name = params[:pstudent][:last_name]
     @pstudent.email = params[:pstudent][:email]
     if @pstudent.save
-      redirect_to home_path, notice: "Ya estás inscrito al newsletter!"
+      redirect_to home_path, notice: "Ya estás inscrito(a) al newsletter!"
     else
       redirect_to home_path, notice: "Algo no funcinó registrando tus datos, por favor trata otra vez llenando todos los campos en la forma!"
     end

@@ -1,1 +1,42 @@
-newsletter form
+<div class="row alert">
+         <div class="col-sm-9 col-sm-offset-2">
+           <% if notice %>
+             <div class="alert alert-info alert-dismissible" role="alert">
+               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <p> <%= notice %>  </p>
+             </div>
+           <% end %>
+         </div>
+</div>
+
+<section class="BotMenu"><a href="/nosotros.html">
+    <h2>NOSOTROS</h2></a><a href="/cursos.html">
+    <h2>CURSOS</h2></a><a href="/inscripciones.html">
+    <h2>INSCRIPCIONES</h2></a></section>
+<section class="Hero Hero--small"></section>
+<a href="/">
+  <%= image_tag("muktek-logo.svg", :class => "Hero-logo", :alt => "Home logo") %>
+  <!-- <img class="Hero-logo" src="/imgs/muktek-logo.svg" alt="Home logo"/> -->
+</a>
+<section class="section--quote">
+  <h2 class="quote">Para estar enterado(a) de lo último que sucede en MUKTEK, además de tener acceso a descuentos especiales para nuestros cursos, inscríbete a nuestro newsletter</h2>
+</section>
+<section class="section--inscription">
+  <h2 class="form__subtitle">Newsletter Sign-Up</h2>
+  <form id="new_pstudent" action="/pstudents/create" accept-charset="UTF-8" method="post">
+    <input name="utf8" type="hidden" value="✓">
+    <input type="hidden" name="authenticity_token" value="ROrtwJLTYLGJKLfLBLMyRWZOX65wyoyKv6btAv2X9o3bLfgApYd5AV/T6Yw41LjnfamGJpFE5rwat9njYK8ZKg==">
+    <div>
+      <input required class="form-control" placeholder="Nombre" type="text" name="pstudent[first_name]" id="pstudent_first_name">
+    </div>
+    <div>
+      <input class="form-control" placeholder="Apellido" type="text" name="pstudent[last_name]" id="pstudent_last_name">
+    </div>
+    <div>
+      <input required class="form-control" placeholder="email" type="text" name="pstudent[email]" id="pstudent_email">
+    </div>
+    <div>
+      <input class="button button--cta" type="submit" name="commit" value="Inscribirme!">
+    </div>
+  </form>
+</section>
