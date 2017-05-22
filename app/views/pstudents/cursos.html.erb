@@ -12,7 +12,7 @@
 <section class="grid">
   <div class="col-1-of-3">
     <div class="copy copy--purple copy--bottom info">
-      <p>Conoce nuestra metodología</p><a class="button button--more-info" href="#methodology">Más Información</a>
+      <p>Conoce nuestra metodología.</p><a class="button button--more-info" href="#methodology">Más Información</a>
       <div class="modal" id="methodology">
         <div class="modal__dialog">
           <div class="modal__content copy--orange">
@@ -40,24 +40,34 @@
       </div>
     </div>
   </div>
-  <div class="col copy__image" style="background-image: url(https://www.officelovin.com/wp-content/uploads/2015/09/the-den-office-coworking-2.jpg);"></div>
+  <div class="col copy__image" style="background-image: url(<%= asset_path('cursos1.jpg') %>);
+    height: auto;
+    margin-top: -100px;">
+  </div>
 </section>
-<section class="grid">
-  <div class="col copy__image" style="background-image: url(https://www.officelovin.com/wp-content/uploads/2015/09/the-den-office-coworking-2.jpg);"></div>
+<section class="grid" style="overflow: hidden;">
+  <div class="col copy__image"
+    style="background-image: url(<%= asset_path('cursos2_new.jpeg') %>);
+    height: auto;
+    margin-top: -200px;">
+  </div>
   <div class="col-1-of-3">
     <div class="copy copy--orange info">
-      <p>Conoce nuestro plan de estudios</p><a class="button button--more-info" href="/MUKTEK_PTCourse_HTML&CSS_June2017.pdf" download>Descargar</a>
+      <p>Conoce nuestro plan de estudios.</p><a class="button button--more-info" href="/MUKTEK_PTCourse_HTML&CSS_June2017.pdf" download>Descargar</a>
     </div>
   </div>
 </section>
-<section class="grid">
+<section class="grid" style="overflow: hidden;">
   <div class="col-1-of-3">
     <div class="copy copy--blue info">
-      <p>Conoce nuestros cursos</p>
+      <p>Conoce nuestros cursos.</p>
       <p><a class="button button--cta" href="/applications.html">Ver cursos</a></p>
     </div>
   </div>
-  <div class="col copy__image" style="background-image: url(https://www.officelovin.com/wp-content/uploads/2015/09/the-den-office-coworking-2.jpg);"></div>
+  <div class="col copy__image" style="background-image: url(<%= asset_path('cursos3.jpg') %>);
+    height: auto;
+    margin-top: -200px;">
+  </div>
 </section>
 <section class="section--quote copy--light-green">
   <h2 class="quote">Talento y tecnología.<br />desde el origen.</h2>

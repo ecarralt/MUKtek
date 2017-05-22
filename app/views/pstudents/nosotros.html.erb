@@ -19,12 +19,17 @@
     <div class="copy">
       <h3 class="copy__subtitle">¿QUIENES SOMOS?</h3>
       <p>Somos una academia de desarrollo de software, dirigida a todos aquellos interesados en aprender a programar desde cero.</p>
-      <div class="copy__image" style="background-image:url(http://lamcdn.net/the-village.ru/post_image-image/BY7wDXSn9cL7GjdbX_RWHw-article.jpg);"></div>
+      <div class="copy__image" style="background-image:url(<%= asset_path('nosotros1.jpeg') %>);"></div>
     </div>
   </div>
   <div class="col copy--is-active copy--light-green">
-    <div class="copy">
-      <div class="copy__image copy__image--top" style="background-image:url(http://lamcdn.net/the-village.ru/post_image-image/BY7wDXSn9cL7GjdbX_RWHw-article.jpg);"></div>
+    <div class="copy" style="overflow: hidden;">
+      <div class="copy__image copy__image--top" style="background-image:url(<%= asset_path('nosotros2.jpg') %>);
+        margin-left: -200px;
+        margin-top: -100px;
+        width: auto;
+        height: 333px;">
+      </div>
       <h3 class="copy__subtitle">¿QUÉ HACEMOS?</h3>
       <p>Impartimos cursos intensivos en desarrollo de software en distintos niveles y modalidades. Nuestro enfoque es el desarrollo web en tecnologías como Javascript, HTML, CSS, y SQL.</p>
     </div>
@@ -37,7 +42,7 @@
         <li>Creemos que hay mucho potencial humano dentro de la población mundial, que TIENE que ser empoderado por medio de la educación</li>
         <li>Creemos que la tecnología puede cambiar vidas</li>
       </ul>
-      <div class="copy__image" style="background-image:url(http://lamcdn.net/the-village.ru/post_image-image/BY7wDXSn9cL7GjdbX_RWHw-article.jpg);"></div>
+      <div class="copy__image" style="background-image:url(<%= asset_path('nosotros3.jpeg') %>);"></div>
     </div>
   </div>
 </section>
