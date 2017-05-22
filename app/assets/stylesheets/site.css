@@ -809,7 +809,8 @@ a {
     color: #2c3d89; }
   .button--more-info {
     color: #2c3d89;
-    background-color: #eaeaea; }
+    background-color: #eaeaea;
+   }
   .button:hover {
     opacity: 0.9; }
 
@@ -997,4 +998,14 @@ blockquote {
   -moz-transform:     rotate(90deg);
   -webkit-transform:  rotate(90deg);
   -o-transform:       rotate(90deg);*/
+}
+
+.popup_ul{
+  margin-left: 20px;
+
+}
+
+.copy .margin_modification{
+  margin-top: 0px;
+
 }
