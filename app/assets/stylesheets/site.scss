@@ -1016,3 +1016,24 @@ blockquote {
   margin-top: 0px;
 
 }
+
+.row .alert{
+
+  background-color: #ffff99;
+  padding: 5px;
+  padding-top: 0px;
+}
+
+.alert-dismissible p{
+  color: black;
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+//
+.alert-dismissible button{
+  background-color: #ffff99;
+  border: none;
+  font-size: 20px;
+
+}

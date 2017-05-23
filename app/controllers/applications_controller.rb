@@ -28,10 +28,12 @@ class ApplicationsController < ApplicationController
     @application.a4_logictest2_arboles = params[:application][:a4_logictest2_arboles]
 
     if @application.save
-      redirect_to home_path, notice: "Hemos recibido tu solicitud. Estaremos en contacto contigo lo antes posible."
+      redirect_to home_path,
+      notice: "Hemos recibido tu solicitud. Estaremos en contacto contigo lo antes posible."
     else
+      flash[:notice] = "Hubo un error guardando tu solicitud.
+      Acuérdate de llenar todos los campos siguiendo los ejemplos!"
       render :new
-      flash[:notice] = "Hubo un error guardando tu solicitud. Acuérdate de llenar todos los campos siguiendo los ejemplos!"
     end
   end
 
