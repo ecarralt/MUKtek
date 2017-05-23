@@ -572,7 +572,7 @@ h1 {
         align-items: center;
         margin-bottom: 0; } }
   .Footer-social {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 2rem;
     display: flex;
     justify-content: space-around; }
@@ -590,7 +590,8 @@ h1 {
   .Footer-info ul {
     list-style-type: none;
     padding-left: 0;
-    text-align: left; }
+    text-align: left;
+  }
 
 .Footer-logo-slogan {
   text-align: left; }
@@ -797,7 +798,8 @@ a {
   width: 50px;
   height: auto;
   //enabling emergency message on top of website (need this to disappear in mobile-first)
-  display: none;}
+  // display: none; //disabled
+}
   @media screen and (min-width: 768px) {
     .Hero-logo {
       display: block; }
@@ -831,7 +833,7 @@ a {
     opacity: 1; }
   .thumbnail__copy {
     transition: all 0.3s ease;
-    opacity: 0;
+    opacity: 1;
     font-size: 15px;
     background-color: rgba(44, 61, 137, 0.7);
     padding: 30px 40px;
@@ -841,6 +843,11 @@ a {
     height: 100%; }
     .thumbnail__copy p {
       margin: 20px 0; }
+    @media screen and (min-width: 768px) {
+      .thumbnail__copy {
+        opacity: 0; }
+    }
+
 
 iframe {
   height: 100%; }
