@@ -634,6 +634,20 @@ a {
     .section--quote {
       height: 40vh; } }
 
+.section--quote-2 {
+  padding: 30px 40px;
+  background-color: #91268F; }
+  @media screen and (min-width: 768px) {
+    .section--quote-2 {
+      height: 40vh; } }
+
+.section--quote-3 {
+  padding: 30px 40px;
+  background-color: #A3D55D; }
+  @media screen and (min-width: 768px) {
+    .section--quote-3 {
+      height: 40vh; } }
+
 .section--inscription {
   color: #2c3d89;
   background-color: white;
@@ -1046,5 +1060,22 @@ p.p_button{
   background-color: #ffff99;
   border: none;
   font-size: 20px;
+
+}
+
+.logo_img{
+  width: 125px;
+
+}
+
+.box_logos{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
 
 }
