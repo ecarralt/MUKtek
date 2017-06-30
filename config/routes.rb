@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   post 'applications/create' => 'applications#create', as: :create_application
 
 
-  #Showing new website
-  get 'pstudents/newhome' => 'pstudents#newhome', as: :newhome
+  #Showing new website (old code)
+  # get 'pstudents/newhome' => 'pstudents#newhome', as: :newhome
 
 
   #NEW WEBSITE ROUTES
@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get '/newsletter' => 'pstudents#newsletter_form', as: :newsletter_form
   get '/terms' => 'pstudents#terms', as: :terms
   get '/privacy' => 'pstudents#privacy', as: :privacy
+  get '/metodologia' => 'pstudents#methodology', as: :methodology
 
 
   ##integrating this as part of the old applications object

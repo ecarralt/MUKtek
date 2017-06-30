@@ -46,5 +46,8 @@ class PstudentsController < ApplicationController
   def privacy
 
   end
+  def methodology
+
+  end
 
 end
