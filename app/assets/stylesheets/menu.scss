@@ -200,10 +200,14 @@ circle {
   align-items: center;
 
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 0;
+  z-index: 5;
 }
 
+.hamburger{
+  position: fixed;
+}
 .nav__list li {
   margin: 0 10px;
 }
@@ -211,8 +215,23 @@ circle {
 .nav__list a {
   text-decoration: none;
   text-transform: uppercase;
-  color: blue;
+  color: white;
   z-index: 4;
+}
+
+.nav__list__text{
+  margin-left: 70px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  margin-top: 0px;
+
+}
+.nav__list__text a{
+  display: inline;
 }
 
 .menu_smallitem a {

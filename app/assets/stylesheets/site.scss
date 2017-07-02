@@ -422,8 +422,10 @@ template {
   .Hero--small {
     background: none;
     background-color: #2c3d89;
-    height: 300px;
+    height: 100px;
   }
+
+
   .Hero-nav {
     color: white;
     margin: 3rem 3rem 0 0;
@@ -787,7 +789,8 @@ a {
     margin-top: 20px; }
 
 .Hero {
-  position: relative; }
+  position: relative;
+}
 
 .Hero--info {
   font-size: 16px;
