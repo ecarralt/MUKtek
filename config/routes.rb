@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get '/privacy' => 'pstudents#privacy', as: :privacy
   get '/metodologia' => 'pstudents#methodology', as: :methodology
   get '/cursos/htmlycss' => 'pstudents#curso_htmlcss', as: :curso_htmlcss
+  get '/cursos/js' => 'pstudents#curso_js', as: :curso_js
 
 
   ##integrating this as part of the old applications object
