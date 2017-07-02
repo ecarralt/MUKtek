@@ -63,4 +63,7 @@ class PstudentsController < ApplicationController
     @pstudent = Pstudent.new
   end
 
+  def curso_htmlcss
+    @pstudent = Pstudent.new
+  end
 end

@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get '/terms' => 'pstudents#terms', as: :terms
   get '/privacy' => 'pstudents#privacy', as: :privacy
   get '/metodologia' => 'pstudents#methodology', as: :methodology
+  get '/cursos/htmlycss' => 'pstudents#curso_htmlcss', as: :curso_htmlcss
 
 
   ##integrating this as part of the old applications object

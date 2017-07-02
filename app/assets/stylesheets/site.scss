@@ -27,7 +27,8 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 0px;}
 
 /**
  * Add the correct display in IE 9-.
@@ -609,7 +610,7 @@ html, body {
   color: white; }
 
 body {
-  padding-bottom: 5rem; }
+  padding-bottom: 0; }
 
 a {
   color: currentColor;

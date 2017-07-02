@@ -111,9 +111,9 @@
               </svg>
             </a>
           </li>
-          <div class="nav__list__text">
-            <li><a href="/cursos">Cursos</a></li>
+          <div class="nav__list__text" id='navtext'>
             <li><a href="/nosotros">Nosotros</a></li>
+            <li><a href="/cursos">Cursos</a></li>
           </div>
 
         </ul>
@@ -122,8 +122,8 @@
             <ul class='menu__list'>
               <li class='menu__item'><a href="/applications/new" class='selected'>Inscripciones</a></li>
               <li><a href="/cursos">Cursos</a></li>
-              <li class="menu_smallitem"><a href="#">Introducción a HTML y CSS</a></li>
-              <li class="menu_smallitem"><a href="#">Javascript Full Stack<br><small>(muy pronto)</small></a></li>
+              <li class="menu_smallitem"><a href="/cursos/htmlycss">Introducción a HTML y CSS</a></li>
+              <li class="menu_smallitem"><a href="#">Javascript Full Stack <small></small></a></li>
               <li><a href="/metodologia">Metodología</a></li>
               <!-- <li><a href="#">Formas de Pago</a></li> -->
               <li><a href="/nosotros">Nosotros</a></li>
@@ -133,7 +133,7 @@
           </div>
           <div class='half'>
             <ul class='contact__list'>
-              <li><a class='selected' href="mailto:info@muktek.com">info@muktek.com</a></li>
+              <li><a class='selected selected__contactemail' href="mailto:info@muktek.com">info@muktek.com</a></li>
               <li><span>55 7672 1135</span></li>
               <li><span>The Pool<br/> Toledo #39<br/>Juarez, CDMX</span></li>
             </ul>
@@ -176,15 +176,18 @@
 <!-- <script src="https://use.fontawesome.com/8442e6330f.js"></script> -->
 
 
-<script>
-  var icon = document.getElementById('icon');
-  var nav = document.getElementById('nav');
+  <script>
+    var icon = document.getElementById('icon');
+    var nav = document.getElementById('nav');
+    var navtext = document.getElementById('navtext');
 
-  icon.addEventListener('click', function(e) {
-    e.preventDefault();
-    nav.classList.toggle('is-open');
-  });
-</script>
+    icon.addEventListener('click', function(e) {
+      e.preventDefault();
+      nav.classList.toggle('is-open');
+      navtext.classList.toggle('hide_text');
+      navtext.classList.toggle ('nav__list__text');
+    });
+  </script>
 
 </body>
 </html>
