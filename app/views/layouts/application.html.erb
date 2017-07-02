@@ -99,6 +99,47 @@
 
   </section> -->
 
+  <header>
+    <nav>
+      <div id='nav'>
+        <ul class='nav__list'>
+          <li>
+            <a href="#" id='icon' class="icon">
+              <span class='icon__line'></span>
+              <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+                <circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+              </svg>
+            </a>
+          </li>
+          <li><a href="">Cursos</a></li>
+          <li><a href="">Nosotros</a></li>
+        </ul>
+        <div class='menu'>
+          <div class='half'>
+            <ul class='menu__list'>
+              <li class='menu__item'><a href="/applications/new" class='selected'>Inscripciones</a></li>
+              <li><a href="/cursos">Cursos</a></li>
+              <li class="menu_smallitem"><a href="#">Introducción a HTML y CSS</a></li>
+              <li class="menu_smallitem"><a href="#">Javascript Full Stack<br><small>(muy pronto)</small></a></li>
+              <li><a href="/metodologia">Metodología</a></li>
+              <!-- <li><a href="#">Formas de Pago</a></li> -->
+              <li><a href="/nosotros">Nosotros</a></li>
+              <li><a href="/newsletter">Newsletter</a></li>
+              <li><a href="https://medium.com/kan-by-muktek">Blog</a></li>
+            </ul>
+          </div>
+          <div class='half'>
+            <ul class='contact__list'>
+              <li><a class='selected' href="mailto:info@muktek.com">info@muktek.com</a></li>
+              <li><span>55 7672 1135</span></li>
+              <li><span>The Pool<br/> Toledo #39<br/>Juarez, CDMX</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
 
 <%= yield %>
 
@@ -125,39 +166,22 @@
 
 
 <!-- Version July 1, 2017 -->
-<a href='#' id='news-trigger' class='news__trigger'><i class='fa fa-envelope-o'></i><span></span></a>
-<nav>
-  <ul id='newsletter' class='newsletter'>
-    <form>
-      <h2 class="news__trigger-h2">Quiero saber mas</h2>
-      <input class="form-control" placeholder="Nombre Completo" type="text" name="pstudent[first_name]" id="pstudent_first_name">
-      <input class="form-control" placeholder="Email" type="text" name="pstudent[last_name]" id="pstudent_last_name">
-      <button class="button button-news button--line button--effect-1">
-        <span class="morph-shape" data-morph-active="M286,113c0,0-68.8,9-136,9c-78.2,0-137-9-137-9S3,97.198,3,62.5C3,33.999,13,12,13,12S72,2,150,2c85,0,136,10,136,10s11,17.598,11,52C297,96.398,286,113,286,113z">
-          <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
-            <path d="M286.5,113c0,0-104,0-136.5,0c-35.75,0-136.5,0-136.5,0s0-39.417,0-52.5c0-12.167,0-48.5,0-48.5s101.833,0,136.5,0c33.583,0,136.5,0,136.5,0s0,35.917,0,48.5C286.5,73.167,286.5,113,286.5,113z"/>
-          </svg>
-        </span>
-        <span class="button__text">Inscribirme</span>
-      </button>
-    </form>
-  </ul>
-</nav>
-<script>
-  var news = document.getElementById('news-trigger');
-  var newsNav = document.getElementById('newsletter');
 
-  news.addEventListener('click', function(e) {
-    e.preventDefault();
-    this.classList.toggle('is-open');
-    newsNav.classList.toggle('is-open');
-  });
-</script>
 <!-- end new version  -->
 
 
 <!-- <script src="https://use.fontawesome.com/8442e6330f.js"></script> -->
 
+
+<script>
+  var icon = document.getElementById('icon');
+  var nav = document.getElementById('nav');
+
+  icon.addEventListener('click', function(e) {
+    e.preventDefault();
+    nav.classList.toggle('is-open');
+  });
+</script>
 
 </body>
 </html>

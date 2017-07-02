@@ -24,20 +24,20 @@
 </section>
 <section class="section--inscription">
   <h2 class="form__subtitle">Newsletter Sign-Up</h2>
-    <%= form_for @pstudent, url: create_pstudent_path do |f| %>
-         <div class="formfield first_name">
-           <%= f.text_field :first_name, class: 'form-control', placeholder: "Nombre"  %>
-         </div>
-         <div class="formfield last_name">
-           <%= f.text_field :last_name, class: 'form-control', placeholder: "Apellido"  %>
-         </div>
-         <div class="formfield last_name">
-           <%= f.text_field :email, class: 'form-control', placeholder: "email"  %>
-         </div>
-         <div class="submit_button">
-           <%= f.submit "Inscribirme!", class: "button button--cta"%>
-         </div>
-     <% end %>
+  <%= form_for @pstudent, url: create_pstudent_path do |f| %>
+       <div class="formfield first_name">
+         <%= f.text_field :first_name, class: 'form-control', placeholder: "Nombre"  %>
+       </div>
+       <div class="formfield last_name">
+         <%= f.text_field :last_name, class: 'form-control', placeholder: "Apellido"  %>
+       </div>
+       <div class="formfield last_name">
+         <%= f.text_field :email, class: 'form-control', placeholder: "email"  %>
+       </div>
+       <div class="submit_button">
+         <%= f.submit "Inscribirme!", class: "button button--cta"%>
+       </div>
+   <% end %>
   <!-- <form id="new_pstudent" action="/pstudents/create" accept-charset="UTF-8" method="post">
     <input name="utf8" type="hidden" value="✓">
     <input type="hidden" name="authenticity_token" value="ROrtwJLTYLGJKLfLBLMyRWZOX65wyoyKv6btAv2X9o3bLfgApYd5AV/T6Yw41LjnfamGJpFE5rwat9njYK8ZKg==">

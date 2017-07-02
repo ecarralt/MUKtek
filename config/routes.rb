@@ -25,6 +25,10 @@ Rails.application.routes.draw do
   ##integrating this as part of the old applications object
   get '/applications' => 'applications#show', as: :applications
 
+  ##Routes for July 1, 2017 version
+  post 'pstudents/quickform' => 'pstudents#create_qf', as: :create_pstudent_qf
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
