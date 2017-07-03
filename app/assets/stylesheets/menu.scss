@@ -218,6 +218,7 @@ circle {
 
 .hamburger{
   position: fixed;
+  // margin-top: -20px;
 }
 .nav__list li {
   margin: 0 10px;
@@ -238,7 +239,7 @@ circle {
   justify-content: space-around;
   align-content: center;
   align-items: center;
-  margin-top: 0px;
+  margin-top: 15px;
 
 }
 .nav__list__text a{
