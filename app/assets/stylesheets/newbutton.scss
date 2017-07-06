@@ -34,3 +34,28 @@
   stroke-width: 5px;
   stroke-linecap: round;
 }
+
+.btn-submit {
+  background-color: rgba(90, 90, 90, 0.2);
+  color: #2c3d89;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid rgba(90, 90, 90, 0.5);
+  border-radius: 3px;
+  font-family: "Montserrat";
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.btn-submit:hover {
+  background-color: rgba(90, 90, 90, 0.4);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.form-title {
+  color: #2c3d89;
+  margin-bottom: 20px;
+}

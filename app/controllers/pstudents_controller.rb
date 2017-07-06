@@ -33,6 +33,18 @@ class PstudentsController < ApplicationController
 
   def create_qf
     @pstudent = Pstudent.new
+    @pstudent.first_name = params[:pstudent][:first_name]
+    @pstudent.last_name = params[:pstudent][:last_name]
+    @pstudent.email = params[:pstudent][:email]
+    @pstudent.fullname = "n/a"
+
+    @pstudent.from_quickbutton = false
+
+    if @pstudent.save && request.xhr?
+      head :ok
+    else
+      head :no_content
+    end
 
   end
 
