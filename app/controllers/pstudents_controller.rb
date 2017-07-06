@@ -38,7 +38,7 @@ class PstudentsController < ApplicationController
     @pstudent.email = params[:pstudent][:email]
     @pstudent.fullname = "n/a"
 
-    @pstudent.from_quickbutton = false
+    @pstudent.from_quickbutton = true
 
     if @pstudent.save && request.xhr?
       head :ok
