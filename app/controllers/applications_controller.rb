@@ -10,6 +10,7 @@ class ApplicationsController < ApplicationController
 
   def create
     @application = Application.new
+    @application.course = params[:application][:course]
     @application.first_name = params[:application][:first_name]
     @application.last_name_materno = params[:application][:last_name_materno]
     @application.last_name_paterno = params[:application][:last_name_paterno]
@@ -28,13 +29,16 @@ class ApplicationsController < ApplicationController
     @application.a4_logictest2_arboles = params[:application][:a4_logictest2_arboles]
 
     if @application.save
-      redirect_to home_path,
-      notice: "Hemos recibido tu solicitud. Estaremos en contacto contigo lo antes posible."
+      redirect_to thank_you_path
     else
       flash[:notice] = "Hubo un error guardando tu solicitud.
       Acuérdate de llenar todos los campos siguiendo los ejemplos!"
       render :new
     end
+  end
+
+  def thankyou
+
   end
 
 end

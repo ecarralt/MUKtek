@@ -4,10 +4,10 @@ Rails.application.routes.draw do
 
   post 'pstudents/create' => 'pstudents#create', as: :create_pstudent
 
-  #Application Form and creation
+  #Application Form and creation and thank you page
   get 'applications/new' => 'applications#new', as: :new_application
   post 'applications/create' => 'applications#create', as: :create_application
-
+  get 'applications/thankyou' => 'applications#thankyou', as: :thank_you
 
   #Showing new website (old code)
   # get 'pstudents/newhome' => 'pstudents#newhome', as: :newhome
