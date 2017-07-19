@@ -869,14 +869,14 @@ a {
     }
 
 
-iframe {
+.iframev {
   height: 100%; }
 
 .video {
   position: relative;
   padding-top: 25px;
   height: 40vh; }
-  .video iframe {
+  .video .iframev {
     position: absolute;
     top: 0;
     left: 0;

@@ -38,6 +38,7 @@ class ApplicationsController < ApplicationController
   end
 
   def thankyou
+        render layout: "thankyoulayout"
 
   end
 

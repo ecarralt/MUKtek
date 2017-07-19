@@ -60,3 +60,6 @@ end
 group :development, :test do #(if local db is sqlite3)
   			gem 'sqlite3'
 		end
+
+#Social tracking
+# gem 'rack-tracker'
