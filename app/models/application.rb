@@ -14,5 +14,7 @@ class Application < ActiveRecord::Base
    validates :a4_logictest2_arboles, presence: true
    validates :requisitos, presence: true
    validates :universidad, presence: true
+   validates :course, presence: true
+
 
 end
