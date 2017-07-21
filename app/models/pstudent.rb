@@ -5,6 +5,7 @@ class Pstudent < ActiveRecord::Base
    validates :email, presence: true
    validates :fullname, presence: true
    validates :from_quickbutton, inclusion: { in: [ true, false ] }
+   validates :from_js_landing, inclusion: { in: [ true, false ] }
 
 
    def full_name

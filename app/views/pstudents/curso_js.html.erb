@@ -1,3 +1,14 @@
+<div class="row alert">
+         <div class="col-sm-9 col-sm-offset-2">
+           <% if notice %>
+             <div class="alert alert-info alert-dismissible" role="alert">
+               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <p> <%= notice %>  </p>
+             </div>
+           <% end %>
+         </div>
+</div>
+
 <section class="Hero Hero--small">
   <a href="/">
   <%= image_tag("muktek-logo.svg", :class => "Hero-logo", :alt => "Home logo") %>
@@ -12,21 +23,21 @@
 <div class="modal__content copy--black">
   <div class="container_newURL">
     <div class="container">
-    <p class="largepar center">
-      <em>Cambia tu vida y aprende a codear desde cero. <br><br>Este es un curso intensivo, presencial, en el cual te convertirás en Jr. Full Stack Developer en Javascript, con el apoyo de 2 Instructores (los mejores) y un Teaching Assistant en una clase de ~15 estudiantes. Aprenderás desarrollo web basado en Javascript, incluyendo todas las herramientas y frameworks más relevantes del mundo el día de hoy - estas incluyen React.js, Node.js, Express.js, MySQL, git y test-driven-development.
+      <p class="largepar center">
+        <em>Cambia tu vida y aprende a codear desde cero. <br><br>Este es un curso intensivo, presencial, en el cual te convertirás en Jr. Full Stack Developer en Javascript, con el apoyo de 2 Instructores (los mejores) y un Teaching Assistant en una clase de ~15 estudiantes. Aprenderás desarrollo web basado en Javascript, incluyendo todas las herramientas y frameworks más relevantes del mundo el día de hoy - estas incluyen React.js, Node.js, Express.js, MySQL, git y test-driven-development.
 
-        <br><br> Además, desarrolla tus habilidades suaves guiado(a) por expertos globales. La empatía, el trabajo en equipo, la diversidad cultural, y otros serán pieza fundamental para tu éxito como emprendedor(a), en el mundo laboral del futuro, y en la vida!
-      </em> <br><br><br><br>
-    </p>
-    <p class="largear">
-      <ul class="popup_ul largepar">
-        <li>13 semanas, lunes a viernes de 9am a 6pm (400+ hrs de clase y apoyo)</li>
-        <li>Mini - Proyectos semanales y 2 Proyectos más grandes</li>
-        <li>Retroalimentación constante y personalizada</li>
-        <li>Últimas tecnologías relacionadas a Javascript (incluyendo React.js) y prácticas globales en desarrollo de software</li>
-        <li>Creación de tu propia web-app, desde cero</li>
-      </ul><br>
-    </p>
+          <br><br> Además, desarrolla tus habilidades suaves guiado(a) por expertos globales. La empatía, el trabajo en equipo, la diversidad cultural, y otros serán pieza fundamental para tu éxito como emprendedor(a), en el mundo laboral del futuro, y en la vida!
+        </em> <br><br><br><br>
+      </p>
+      <p class="largear">
+        <ul class="popup_ul largepar">
+          <li>13 semanas, lunes a viernes de 9am a 6pm (400+ hrs de clase y apoyo)</li>
+          <li>Mini - Proyectos semanales y 2 Proyectos más grandes</li>
+          <li>Retroalimentación constante y personalizada</li>
+          <li>Últimas tecnologías relacionadas a Javascript (incluyendo React.js) y prácticas globales en desarrollo de software</li>
+          <li>Creación de tu propia web-app, desde cero</li>
+        </ul><br>
+      </p>
       <h2 class="copy__title h2_newURL">¿Por qué aprender a codear?</h2>
       <p class="largepar">
         <ul class="popup_ul largepar">
@@ -77,9 +88,29 @@
       <h2 class="copy__title h2_newURL">Inscripciones:</h2></br>
       <p class= "largepar">
           Inscríbete <a class="underline" href="/applications/new">AQUÍ</a><br><br>
-          <small>Para más informes, escríbenos a <a class="underline" href="mailto:september18@muktek.com">september18@muktek.com</a></small>
+          <small>Para más informes, llena la forma de abajo o escríbenos a <a class="underline" href="mailto:september18@muktek.com">september18@muktek.com</a></small>
       </p>
+    </div>
   </div>
 
-  </div>
+  <!-- TEST FORM -->
+
+  <section class="section--inscription">
+    <h2 class="form__subtitle blacktext">CHANGE YOUR LIFE...NOW</h2>
+    <%= form_for @pstudent, url: create_pstudent_js_path do |f| %>
+         <div class="formfield">
+           <%= f.text_field :first_name, class: 'form-control form-control_black', placeholder: "Nombre"  %>
+         </div>
+         <div class="formfield">
+           <%= f.text_field :email, class: 'form-control form-control_black', placeholder: "email"  %>
+         </div>
+         <div class="submit_button">
+           <%= f.submit "NOW!", class: "button button--cta button-black"%>
+         </div>
+     <% end %>
+  </section>
+
+
+
+
 </div>

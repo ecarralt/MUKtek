@@ -30,6 +30,9 @@ Rails.application.routes.draw do
   ##Routes for July 1, 2017 version
   post 'pstudents/quickform' => 'pstudents#create_qf', as: :create_pstudent_qf
 
+  ##Route for JS landing page
+  post 'pstudents/create_jslandingform' => 'pstudents#create_js', as: :create_pstudent_js
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

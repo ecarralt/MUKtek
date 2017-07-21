@@ -15,6 +15,7 @@ class PstudentsController < ApplicationController
     @pstudent.email = params[:pstudent][:email]
     @pstudent.fullname = "n/a"
     @pstudent.from_quickbutton = false
+    @pstudent.from_js_landing = false
 
     if @pstudent.save
       redirect_to home_path,
@@ -37,8 +38,9 @@ class PstudentsController < ApplicationController
     @pstudent.last_name = params[:pstudent][:last_name]
     @pstudent.email = params[:pstudent][:email]
     @pstudent.fullname = "n/a"
-
     @pstudent.from_quickbutton = true
+    @pstudent.from_js_landing = false
+
 
     if @pstudent.save && request.xhr?
       head :ok
@@ -48,21 +50,34 @@ class PstudentsController < ApplicationController
 
   end
 
+  def create_js
+    @pstudent = Pstudent.new
+    @pstudent.first_name = params[:pstudent][:first_name]
+    @pstudent.last_name = "n/a"
+    @pstudent.email = params[:pstudent][:email]
+    @pstudent.fullname = "n/a"
+    @pstudent.from_quickbutton = false
+    @pstudent.from_js_landing = true
+
+    if @pstudent.save
+      redirect_to thank_you_path
+    else
+      flash[:notice] = "Hubo un error guardando tus datos.
+      Acuérdate de llenar todos los campos siguiendo los ejemplos!"
+      render :curso_js
+    end
+
+  end
+
 ## NEW WEBSITE CODE
 
   def nosotros
     @pstudent = Pstudent.new
-
-
   end
 
   def cursos
     @pstudent = Pstudent.new
-
-
   end
-
-
 
   def terms
     @pstudent = Pstudent.new
