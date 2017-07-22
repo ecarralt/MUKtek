@@ -146,8 +146,8 @@ circle {
   font-size: 24px;
 }
 
-.menu__list li:not(:last-of-type) {
-  margin-bottom: 25px;
+.menuitem {
+  margin-bottom: 15px;
 }
 
 .menu__list a {
@@ -246,17 +246,18 @@ circle {
   display: inline;
 }
 
-.menu__item{
+.menu__top-item{
     margin-top: 40px;
 }
 
 .menu_smallitem a {
   font-size: 15px;
   margin-top: -20px;
-
 }
 .menu_smallitem{
   padding-left: 10px;
+  margin-bottom: 0px;
+
 }
 
 @media screen and (min-width: 738px) {
