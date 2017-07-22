@@ -125,27 +125,18 @@
 </section>
 <!-- Form -->
 <div class='subscription'>
-  <!-- <form>
-    <h2>I want to get in!</h2>
-    <label>Email Address</label>
-    <input type="email" name="" />
-    <label>Name</label>
-    <input type="text" name="">
-    <button type='submit'>Subscribe</button>
-  </form> -->
   <h2>I want to get in!</h2>
-
   <%= form_for @pstudent, url: create_pstudent_js_path do |f| %>
        <div>
-         <label>Email Address</label>
+         <label>Name</label>
          <%= f.text_field :first_name %>
        </div>
        <div>
-         <label>Name</label>
+         <label>Email</label>
          <%= f.text_field :email %>
        </div>
        <div>
-         <%= f.submit "Subscribe"%>
+         <%= f.submit "Subscribe", class: "jslanding_submit"%>
        </div>
    <% end %>
 </div>
