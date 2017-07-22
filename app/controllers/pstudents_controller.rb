@@ -64,7 +64,7 @@ class PstudentsController < ApplicationController
     else
       flash[:notice] = "Hubo un error guardando tus datos.
       Acuérdate de llenar todos los campos siguiendo los ejemplos!"
-      render :curso_js
+      render :curso_js, layout: "jslandinglayout" 
     end
 
   end
@@ -96,5 +96,6 @@ class PstudentsController < ApplicationController
 
   def curso_js
     @pstudent = Pstudent.new
+    render layout: "jslandinglayout"
   end
 end

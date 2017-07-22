@@ -1,116 +1,152 @@
-<div class="row alert">
-         <div class="col-sm-9 col-sm-offset-2">
-           <% if notice %>
-             <div class="alert alert-info alert-dismissible" role="alert">
-               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-               <p> <%= notice %>  </p>
-             </div>
-           <% end %>
-         </div>
+
+<div class="">
+  <% if notice %>
+    <div class="alerta">
+      <p> <%= notice %>  </p>
+    </div>
+  <% end %>
 </div>
 
-<section class="Hero Hero--small">
-  <a href="/">
-  <%= image_tag("muktek-logo.svg", :class => "Hero-logo", :alt => "Home logo") %>
-  </a>
+
+
+<a href="/">
+  <%= image_tag("new-logo.png", :class => "logo-lp", :alt => "Home logo") %>
+</a>
+
+<main class='intro'>
+  <code>
+    <p><span class='pink'>switch</span> (career) {</p>
+    <p class='i1'><span class='pink'>case</span> FULLSTACK_JR:</p>
+    <p class='i2'><span class='gray'>// muktek.com</span></p>
+    <p class='i2'><span class='blue'>console.log</span>(<span class='green'>"Start learning"</span>);</p>
+    <p class='i2'><span class='pink'>break</span>;</p>
+    <p>}</p>
+  </code>
+</main>
+<section class='grid'>
+  <div class='col'>
+    <%= image_tag("date.svg", :class => "big-date", :alt => "JS Full-time MUKTEK Bootcamp Start Date") %>
+
+  </div>
+  <div class='col'>
+    <h1 class='title'>MUKTEK<br />Academy<br />Mexico<br />City</h1>
+    <p class='small-p'>Aprende de la mano de las startups y VC’s más importantes de México en un ambiente de innovación e inversión. Con instructores y metodología del calibre de <a href='https://www.theironyard.com/' target='_blank'>The Iron Yard</a> y <a href='https://www.galvanize.com' target='_blank'>Galvanize</a>. Y gana awareness de las habilidades que necesitas para ser exitoso en la vida con nuestros módulos de Engineering Soft Skills.</p>
+    <p class='small-p fs-md'>JavaScript es el lenguaje programación web más popular apoyado de empresas como Facebook, Netflix y AirBnB. ¿Sabes escribirlo? Lo puedes aprender hoy.</p>
+    <p class='small-p fs-md join-now'>Join now</p>
+  </div>
 </section>
+<section class='relative'>
+  <code class='green'>html css javascript es6 react.js express.js mongodb mysql sql transact git github testing unit testing end-to-end e2e mocha chai.js jest linters best practices functions variables responsive design mobile first integration tests branches pull request issues labels callbacks closures esnext icons sass media queries apis fetch components jasmine browser console debugging refactoring modules objects describe workflow apps npm node.js html css javascript es6 react.js express.js mongodb mysql sql transact git github testing unit testing end-to-end e2e mocha chai.js jest linters best practices functions variables responsive design mobile first integration tests branches pull request issues labels callbacks closures esnext icons sass media queries apis fetch components jasmine browser console debugging refactoring modules objects describe workflow apps npm node.js html css javascript es6 react.js express.js mongodb mysql sql transact git github testing unit testing end-to-end e2e mocha chai.js jest linters best practices functions variables responsive design mobile first integration tests branches pull request issues labels callbacks closures esnext icons sass media queries apis fetch components jasmine browser console debugging refactoring modules objects describe workflow apps npm node.js html css javascript es6 react.js express.js mongodb mysql sql transact git github testing unit testing end-to-end e2e mocha chai.js jest linters best practices functions variables responsive design mobile first integration tests branches pull request issues labels callbacks closures esnext icons sass media queries apis fetch components jasmine browser console debugging refactoring modules objects describe workflow apps npm node.js html css javascript es6 react.js express.js mongodb mysql sql transact git github testing unit testing end-to-end e2e mocha chai.js jest linters best practices functions variables responsive design mobile first integration tests branches pull request issues labels callbacks closures esnext icons sass media queries apis <span class='extra-code'>fetch components jasmine browser console debugging refactoring modules objects describe workflow apps npm node.js html css javascript es6 react.js express.js mongodb mysql sql transact git github testing unit testing end-to-end e2e mocha chai.js jest linters best practices functions variables responsive design mobile first integration tests branches pull request issues labels callbacks closures esnext icons sass media queries apis fetch components jasmine browser console debugging refactoring modules objects describe workflow apps npm node.js html css javascript es6 react.js express.js mongodb mysql sql transact git github html css javascript es6 react.js express.js mongodb mysql sql transact git github testing unit testing end-to-end e2e mocha chai.js jest linters best practices functions variables responsive design mobile first integration tests branches pull request issues labels callbacks closures esnext icons sass media queries apis fetch components jasmine browser console debugging refactoring modules objects describe workflow apps npm node.js html css javascript es6 react.js express.js mongodb mysql sql transact git github testing unit testing end-to-end e2e mocha chai.js jest linters best practices functions variables responsive design mobile first integration tests branches pull request issues labels callbacks closures esnext icons sass media queries apis fetch components jasmine browser console debugging refactoring modules objects describe workflow apps npm node.js html css javascript es6 react.js express.js mongodb mysql sql transact git github testing unit testing end-to-end e2e mocha chai.js jest linters best practices functions variables responsive design mobile first integration tests branches pull request issues labels callbacks closures esnext icons sass media queries apis fetch components jasmine browser console debugging refactoring modules objects describe workflow apps npm node.js html css javascript es6 react.js express.js mongodb mysql sql transact git github testing unit testing end-to-end e2e mocha chai.js jest linters best practices functions variables responsive design mobile first integration tests branches pull request issues labels callbacks closures esnext icons sass media queries apis fetch components jasmine browser console debugging refactoring modules objects describe workflow apps npm node.js html css javascript es6 react.js express.js mongodb mysql sql transact git github testing unit testing end-to-end e2e mocha chai.js jest linters best practices functions variables responsive design mobile first integration tests branches pull request issues labels callbacks closures esnext icons sass media queries apis fetch components jasmine browser console debugging refactoring modules objects describe workflow apps npm node.js html css javascript es6 react.js express.js mongodb mysql sql transact git github testing unit testing end-to-end e2e mocha chai.js jest linters best practices functions variables responsive design mobile first integration tests branches pull request issues labels callbacks closures esnext icons sass media queries apis fetch components jasmine browser console debugging refactoring modules objects describe workflow apps npm node.js html css javascript es6 react.js express.js mongodb mysql sql transact git github</span>
+  </code>
 
-<section class="section--quote copy--black">
-  <h2 class="quote">Javascript Full Stack (13 weeks) <br><small>(ready to change your life?)</small></h2>
+  <%= image_tag("js.svg", :class => "js-img", :alt => "JS") %>
+
 </section>
+<section class='timeline'>
+  <div>
+    <time>2 weeks</time><br/>
+    <span>Pre Work</span>
+  </div>
+  <div>
+    <time>1 week</time><br/>
+    <span>HTML CSS</span>
+  </div>
+  <div>
+    <time>3 weeks</time><br/>
+    <span>JavaScript</span>
+  </div>
+  <div>
+    <time>2 weeks</time><br/>
+    <span>APIs</span>
+  </div>
+  <div>
+    <time>3 weeks</time><br/>
+    <span>React.js</span>
+  </div>
+</section>
+<section class='about'>
+  <h2>We Are</h2>
+  <p>MUKTEK llega a México con un nivel de calidad TOP. Además, el modelo de MUKTEK es 100% inclusivo. Becamos a gente que, a pesar de tener pocas oportunidades en la vida, ha logrado maximizar tu potencial. Dedicamos <sup>1</sup>/<sub>3</sub> parte de nuestros espacios en el aula para el apoyo social.
+  <br/>Nuestras instalaciones están ubicadas dentro del ecosistema BAHÍA en Bahía Santa Bárbara 145, Colonia Verónica Anzures 11300 CDMX.</p>
 
+  <%= image_tag("muktek.svg", :class => "muktek-img", :alt => "We are MUKTEK") %>
 
-<div class="modal__content copy--black">
-  <div class="container_newURL">
-    <div class="container">
-      <p class="largepar center">
-        <em>Cambia tu vida y aprende a codear desde cero. <br><br>Este es un curso intensivo, presencial, en el cual te convertirás en Jr. Full Stack Developer en Javascript, con el apoyo de 2 Instructores (los mejores) y un Teaching Assistant en una clase de ~15 estudiantes. Aprenderás desarrollo web basado en Javascript, incluyendo todas las herramientas y frameworks más relevantes del mundo el día de hoy - estas incluyen React.js, Node.js, Express.js, MySQL, git y test-driven-development.
+</section>
+<section class='m'>
+  <div>
+    <blockquote class='quote quote--big quote--center'>
+      Great mentors change lives.
+    </blockquote>
+  </div>
+</section>
+<section>
+  <div class='clearfix'>
+    <div class='teacher teacher--right'>
+      <div class='grid'>
+        <div class='teacher__more'>
+          <p>Engineer</p>
+          <p>Designer</p>
+          <p>Teacher</p>
+          <p>Developer</p>
+        </div>
+        <%= image_tag("yair.jpg", :class => "teacher__img", :alt => "Yair") %>
 
-          <br><br> Además, desarrolla tus habilidades suaves guiado(a) por expertos globales. La empatía, el trabajo en equipo, la diversidad cultural, y otros serán pieza fundamental para tu éxito como emprendedor(a), en el mundo laboral del futuro, y en la vida!
-        </em> <br><br><br><br>
-      </p>
-      <p class="largear">
-        <ul class="popup_ul largepar">
-          <li>13 semanas, lunes a viernes de 9am a 6pm (400+ hrs de clase y apoyo)</li>
-          <li>Mini - Proyectos semanales y 2 Proyectos más grandes</li>
-          <li>Retroalimentación constante y personalizada</li>
-          <li>Últimas tecnologías relacionadas a Javascript (incluyendo React.js) y prácticas globales en desarrollo de software</li>
-          <li>Creación de tu propia web-app, desde cero</li>
-        </ul><br>
-      </p>
-      <h2 class="copy__title h2_newURL">¿Por qué aprender a codear?</h2>
-      <p class="largepar">
-        <ul class="popup_ul largepar">
-          <li>Te empodera para emprender</li>
-          <li>Podrás empezar a hacer tus propias apps, páginas web, o juegos</li>
-          <li>Te abrirá más puertas del mercado laboral y progresarás más rápido</li>
-        </ul>
-      </p>
-      <h2 class="copy__title h2_newURL">¿Y por qué Javascript?</h2></br>
-      <p class="largepar">
-        <ul class="popup_ul largepar">
-          <li>El 2ndo lenguaje más demandado en México</li>
-          <li>Tiene apoyo de empresas como Facebook y Netflix</li>
-          <li>Es “el futuro de los lenguajes web” según los expertos</li>
-          <li>Se utiliza para hacer páginas web interactivas y videojuegos</li>
-        </ul>
-      </p>
-      <h2 class="copy__title h2_newURL">¿Por qué MUKTEK?</h2></br>
-      <p class="largepar center">
-        <em>
-        Utilizamos una metodología única en el país, creada en conjunto con expertos de coding bootcamps en EUA y expertos internacionales en desarrollo personal.
-      </em><br><br><br>
-        <ul class="popup_ul largepar">
-          <li>Experiencia en coding bootcamps en USA como The Iron Yard y Galvanize</li>
-          <li>80% práctico, 20% teórico</li>
-          <li>Seguimiento personalizado 24/7</li>
-          <li>Mentores en Estados Unidos y México</li>
-          <li>Conexión con el mundo laboral y/o mentorías en emprendimiento</li>
-        </ul>
-      </p>
-      <h2 class="copy__title h2_newURL">Logística:</h2></br>
-      <p class="largepar">
-        Estudiar es fácil... encontrar el ambiente ideal para hacerlo, no tanto... MUKTEK lleva tu salón de clases a un ambiente de emprendedurismo para lograr el ecosistema tecnológico ideal para tu aprendizaje y motivación.<br><br><br><br>
-      </p>
-      <p class="largepar center">
-      <br>
-        <big>Septiembre 18 - Diciembre 15</big><br><br>
-        <big>  Inscripciones desde el 17 de julio</big>
-      </p>
-      <h2 class="copy__title h2_newURL"><br><br>Requisitos:</h2></br>
-        <p class="largepar">
-          <ul class="popup_ul largepar">
-            <li>Inglés leído y escrito</li>
-            <li>Motivación para aprender</li>
-            <li>Computadora personal</li>
-          </ul>
-        </p>
-      <h2 class="copy__title h2_newURL">Inscripciones:</h2></br>
-      <p class= "largepar">
-          Inscríbete <a class="underline" href="/applications/new">AQUÍ</a><br><br>
-          <small>Para más informes, llena la forma de abajo o escríbenos a <a class="underline" href="mailto:september18@muktek.com">september18@muktek.com</a></small>
-      </p>
+      </div>
+      <div class='grid'>
+        <p class='teacher__name'>Yair<br />Rodríguez<br />Ortega</p>
+        <p class='teacher__bio'>Ingeniero en Arquitectura de Software. 3 años de Experiencia como Full Stack Web Developer. Se encuentra escribiendo su primer libro sobre ESNEXT y TDD en JavaScript.</p>
+      </div>
     </div>
   </div>
 
-  <!-- TEST FORM -->
+  <div class='clearfix'>
+    <div class='teacher'>
+      <div class='grid'>
+        <div class='teacher__more'>
+          <p>Engineer</p>
+          <p>Designer</p>
+          <p>Teacher</p>
+          <p>Developer</p>
+        </div>
+        <%= image_tag("travis.jpg", :class => "teacher__img", :alt => "Travis") %>
+      </div>
+      <div class='grid'>
+        <p class='teacher__name'>Travis<br />Hubbard</p>
+        <p class='teacher__bio'>Desarrollador Javascript Full stack y ex-Lead Instructor en The Iron Yard, Charleston, SC, USA. Especializado en integrar aplicaciones escritas utilizando las herramientas más modernas de Javascript en el front-end con .NET, Ruby on Rails, y Java Spring.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class='m'>
+  <blockquote class='quote'>
+    For most people on Earth, the digital revolution hasn’t event started yet. Within the next 10 years all that will change. Let’s get the whole world coding!
+    <cite>Eric Schmidt, Chairman, Alphabet, Inc.</cite>
+  </blockquote>
+</section>
+<!-- Form -->
+<div class='subscription'>
+  <!-- <form>
+    <h2>I want to get in!</h2>
+    <label>Email Address</label>
+    <input type="email" name="" />
+    <label>Name</label>
+    <input type="text" name="">
+    <button type='submit'>Subscribe</button>
+  </form> -->
+  <h2>I want to get in!</h2>
 
-  <section class="section--inscription">
-    <h2 class="form__subtitle blacktext">CHANGE YOUR LIFE...NOW</h2>
-    <%= form_for @pstudent, url: create_pstudent_js_path do |f| %>
-         <div class="formfield">
-           <%= f.text_field :first_name, class: 'form-control form-control_black', placeholder: "Nombre"  %>
-         </div>
-         <div class="formfield">
-           <%= f.text_field :email, class: 'form-control form-control_black', placeholder: "email"  %>
-         </div>
-         <div class="submit_button">
-           <%= f.submit "NOW!", class: "button button--cta button-black"%>
-         </div>
-     <% end %>
-  </section>
-
-
-
-
+  <%= form_for @pstudent, url: create_pstudent_js_path do |f| %>
+       <div>
+         <label>Email Address</label>
+         <%= f.text_field :first_name %>
+       </div>
+       <div>
+         <label>Name</label>
+         <%= f.text_field :email %>
+       </div>
+       <div>
+         <%= f.submit "Subscribe"%>
+       </div>
+   <% end %>
 </div>
+<!-- Form -->

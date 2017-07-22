@@ -1,0 +1,464 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+
+// img{
+//   background-image: asset-url("rails.png")
+//
+//   }
+
+// @font-face {
+//   font-family: 'Fantasque Sans Mono';
+//   src: url('fonts/fantasque/FantasqueSansMono-Italic.eot'); /* IE 9 Compatibility Mode */
+//   src: url('fonts/fantasque/FantasqueSansMono-Italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+//        url('fonts/fantasque/FantasqueSansMono-Italic.woff2') format('woff2'),
+//        url('fonts/fantasque/FantasqueSansMono-Italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+//        url('fonts/fantasque/FantasqueSansMono-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+//        url('fonts/fantasque/FantasqueSansMono-Italic.svg#FantasqueSansMono-Italic') format('svg'); /* Chrome < 4, Legacy iOS */
+//   font-weight: 400;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'Fantasque Sans Mono';
+//   src: url('fonts/fantasque/FantasqueSansMono-Regular.eot'); /* IE 9 Compatibility Mode */
+//   src: url('fonts/fantasque/FantasqueSansMono-Regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+//        url('fonts/fantasque/FantasqueSansMono-Regular.woff2') format('woff2'),
+//        url('fonts/fantasque/FantasqueSansMono-Regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+//        url('fonts/fantasque/FantasqueSansMono-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+//        url('fonts/fantasque/FantasqueSansMono-Regular.svg#FantasqueSansMono-Regular') format('svg'); /* Chrome < 4, Legacy iOS */
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Fantasque Sans Mono';
+//   src: url('fonts/fantasque/FantasqueSansMono-BoldItalic.eot'); /* IE 9 Compatibility Mode */
+//   src: url('fonts/fantasque/FantasqueSansMono-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+//        url('fonts/fantasque/FantasqueSansMono-BoldItalic.woff2') format('woff2'),
+//        url('fonts/fantasque/FantasqueSansMono-BoldItalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+//        url('fonts/fantasque/FantasqueSansMono-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+//        url('fonts/fantasque/FantasqueSansMono-BoldItalic.svg#FantasqueSansMono-BoldItalic') format('svg'); /* Chrome < 4, Legacy iOS */
+//   font-weight: 700;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'Fantasque Sans Mono';
+//   src: url('fonts/fantasque/FantasqueSansMono-Bold.eot'); /* IE 9 Compatibility Mode */
+//   src: url('fonts/fantasque/FantasqueSansMono-Bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+//        url('fonts/fantasque/FantasqueSansMono-Bold.woff2') format('woff2'),
+//        url('fonts/fantasque/FantasqueSansMono-Bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+//        url('fonts/fantasque/FantasqueSansMono-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+//        url('fonts/fantasque/FantasqueSansMono-Bold.svg#FantasqueSansMono-Bold') format('svg'); /* Chrome < 4, Legacy iOS */
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Open Sans';
+  padding: 0 15px;
+}
+
+code {
+  color: white;
+  font-family: 'Fantasque Sans Mono', Menlo, Monaco, Consolas, monospace;
+}
+
+blockquote {
+  margin: 0;
+}
+
+.logo-lp {
+  max-width: 120px;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
+}
+
+.intro {
+  height: 100%;
+}
+
+.intro code {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+}
+
+.big-date {
+  max-width: 100%;
+}
+
+.intro p {
+  margin: 0;
+}
+
+.i1 {
+  text-indent: 40px;
+}
+
+.i2 {
+  text-indent: 80px;
+}
+
+.pink {
+  color: #FD5AE8;
+}
+.blue {
+  color: #5AE8FD;
+}
+.green {
+  color: #29FCA5;
+}
+.gray {
+  color: #9B9B9B;
+}
+
+.grid {
+  display: flex;
+}
+
+.col {
+  width: 50%;
+}
+
+.title {
+  font-size: 25px;
+  margin: 0;
+}
+
+.small-p {
+  max-width: 260px;
+  font-size: 14px;
+}
+
+.small-p a {
+  color: #29FCA5;
+  text-decoration: none;
+}
+
+.join-now {
+  color: #5AE8FD;
+}
+
+.relative {
+  position: relative;
+}
+
+.js-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+}
+
+.extra-code {
+  display: none;
+}
+
+.muktek-img {
+  max-width: 100%;
+}
+
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  text-align: left;
+  font-size: 40px;
+}
+
+.about p {
+  max-width: 260px;
+  font-size: 14px;
+  right: 30px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.about img {
+  margin-top: 30px;
+}
+
+.quote {
+  color: #F24920;
+  max-width: 480px;
+  position: relative;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 38px;
+  padding: 0 40px;
+}
+
+.quote::after {
+  content: '“';
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  margin-top: 20px;
+  right: 0;
+}
+
+.quote cite {
+  font-style: normal;
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.quote--center {
+  margin: 0 auto;
+}
+
+.quote--big {
+  font-weight: 800;
+  line-height: 1;
+}
+
+.m {
+  margin: 60px 0;
+}
+
+.teacher {
+  margin-top: 50px;
+}
+
+.teacher__img {
+  border-radius: 50%;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-left: 70px;
+}
+
+.teacher__bio {
+  max-width: 50%;
+  font-size: 14px;
+  margin-left: 200px;
+}
+
+.teacher__name {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.teacher__more {
+  font-size: 20px;
+  transform: rotate(-90deg);
+  transform-origin: 100px 100px;
+  color: #F24920;
+}
+
+.teacher__more p {
+  margin: 0;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.quote cite {
+  display: block;
+}
+
+.subscription {
+  max-width: 430px;
+  margin: 0 auto;
+  height: 50vh;
+}
+
+.subscription input {
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  width: 260px;
+  color: white;
+  background-color: #393535;
+  margin-top: 5px;
+}
+
+.subscription label {
+  width: 25%;
+  display: inline-block;
+}
+
+.subscription h2 {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.subscription input:focus {
+  outline: none;
+  background-color: rgba(57, 53, 53, 0.93);
+}
+
+.subscription [type='submit'] {
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 15px;
+  padding-left: 15px;
+  margin-top: 20px;
+  height: 36px;
+  background-color: #393535;
+  color: white;
+  display: inline-block;
+  max-width: 133px;
+}
+
+.subscription [type='submit']:hover {
+  background-color: #EAEAEA;
+  color: #393535;
+}
+
+.subscription__button {
+  background-color: #D8D8D8;
+  border: 1px solid #979797;
+  font-size: 20px;
+  border-radius: 4px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.timeline {
+  margin: 140px 0;
+}
+
+.timeline div {
+  /*border: 2px solid #979797;*/
+  max-width: 190px;
+  margin: 0 auto 35px;
+  text-align: center;
+  position: relative;
+}
+
+.timeline div::after {
+  content: '';
+  width: 2px;
+  height: 40px;
+  background-color: #979797;
+  display: inline-block;
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 1px);
+  z-index: -1;
+}
+
+.timeline div:last-of-type::after {
+  display: none;
+}
+
+.timeline time {
+  font-size: 14px;
+}
+
+.timeline span {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  display: inline-block;
+  font-size: 25px;
+  width: 170px;
+  text-align: center;
+}
+
+@media screen and (min-width: 736px) {
+  .intro code {
+    font-size: 25px;
+    line-height: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .fs-md {
+    font-size: 35px;
+  }
+
+  .extra-code {
+    display: inline;
+  }
+
+  .quote--big {
+    font-size: 55px;
+  }
+
+  .teacher__bio {
+    max-width: 174px;
+  }
+
+  .teacher--right {
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .intro code {
+    font-size: 40px;
+    max-width: 750px;
+    line-height: 55px;
+  }
+
+  .title {
+    font-size: 55px;
+  }
+
+  .about p {
+    text-align: left;
+    position: absolute;
+  }
+
+  .teacher__name {
+    font-size: 60px;
+    line-height: 55px;
+  }
+
+  .quote--big {
+    font-size: 80px;
+  }
+}
+
+.alerta{
+  padding: 10px 10px 10px 10px;
+  background-color: red;
+
+}
+
+.alerta p{
+  text-align: center;
+
+}
+
+.alerta .close{
+  background-color: transparent;
+  border: 0px;
+
+}
