@@ -59,11 +59,12 @@
 }
 
 html,
-body {
+.jslpbody {
   height: 100%;
 }
 
-body {
+
+.jslpbody {
   background-color: black;
   color: white;
   font-family: 'Open Sans';
@@ -120,11 +121,12 @@ blockquote {
 .pink {
   color: #FD5AE8;
 }
-.blue {
+.jslp_blue {
   color: #5AE8FD;
 }
 .green {
   color: #29FCA5;
+  font-size: 16px;
 }
 .gray {
   color: #9B9B9B;
