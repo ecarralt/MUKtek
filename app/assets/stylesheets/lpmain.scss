@@ -197,7 +197,7 @@ blockquote {
   margin-top: 30px;
 }
 
-.quote {
+.quote_jslp {
   color: #F24920;
   max-width: 480px;
   position: relative;
@@ -207,7 +207,7 @@ blockquote {
   padding: 0 40px;
 }
 
-.quote::after {
+.quote_jslp::after {
   content: '“';
   display: inline-block;
   font-family: sans-serif;
@@ -217,7 +217,7 @@ blockquote {
   right: 0;
 }
 
-.quote cite {
+.quote_jslp cite {
   font-style: normal;
   color: white;
   font-size: 20px;
@@ -278,7 +278,7 @@ blockquote {
   clear: both;
 }
 
-.quote cite {
+.quote_jslp cite {
   display: block;
 }
 
