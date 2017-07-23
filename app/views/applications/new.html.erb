@@ -23,14 +23,14 @@
   <h2 class="quote">Si tú no trabajas por tus sueños, alguien te contratará para que trabajes por los suyos <br><small>-Steve Jobs</small> </h2>
 </section>
 <section class="section--inscription">
-  <h2 class="form__subtitle">Inscríbete Ahora </br></br>
-    <small>¡Recuerda escoger el curso al que te estas inscribiendo!</small></h2>
+  <h2 class="form__subtitle">Postula Ahora </br></br>
+    <small>¡Recuerda escoger el curso al que estás postulando!</small></h2>
 
     <%= form_for @application, url: create_application_path do |f| %>
         <div class="row">
           <div class="col-sm-4">
             <div class="">
-              <%= f.label "Curso al que te quieres inscribir" %>:
+              <%= f.label "Curso al que quieres postular" %>:
               <br>
               <br>
               <%= f.radio_button(:course, "JavaScript FT") %>
